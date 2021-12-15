@@ -1,0 +1,119 @@
+.education_page .hero-section {
+  background: url(/img/education/hero_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.education_page .hero-section .r-container {
+  padding-top: 18rem;
+  padding-bottom: 5rem;
+}
+@media (max-width: 991px) {
+  .education_page .hero-section .r-container {
+    padding-top: 14rem;
+  }
+}
+.education_page .hero-section .r-container .title {
+  font-size: 7.2rem;
+  font-weight: 400;
+  color: #021825;
+}
+.education_page .hero-section .r-container .title > span {
+  font-family: FreeSerif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 7.6rem;
+  line-height: 102%;
+}
+.education_page .hero-section .r-container .description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 767px) {
+  .education_page .hero-section .r-container {
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+  }
+  .education_page .hero-section .r-container .title {
+    width: 80%;
+    font-size: 5.8rem;
+    line-height: 1;
+  }
+  .education_page .hero-section .r-container .title span {
+    font-size: 5.8rem;
+    line-height: 98%;
+  }
+}
+@media (max-width: 575px) {
+  .education_page .hero-section .r-container p {
+    font-size: 1.8rem;
+  }
+  .education_page .hero-section .r-container .title {
+    width: 100%;
+    font-size: 3.4rem;
+  }
+  .education_page .hero-section .r-container .title span {
+    font-size: 3.4rem;
+  }
+}
+.education_page .guide-section {
+  background: #f7f3ec;
+}
+.education_page .guide-section .title {
+  font-size: 4.8rem;
+  font-weight: 400;
+  color: #01215c;
+}
+.education_page .guide-section .guide-text {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 400;
+  color: rgba(2, 24, 37, 0.8);
+}
+@media (max-width: 575px) {
+  .education_page .guide-section .title {
+    width: 100%;
+    font-size: 3.6rem;
+  }
+  .education_page .guide-section .guide-text {
+    font-size: 1.8rem;
+  }
+}
+.education_page .know-about-section .title {
+  font-size: 6.8rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+.education_page .know-about-section .title span {
+  font-family: FreeSerif;
+  font-style: italic;
+  font-size: 7.2rem;
+}
+.education_page .know-about-section .education-item .image-panel {
+  overflow: hidden;
+}
+.education_page .know-about-section .education-item .image-panel img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.education_page .know-about-section .education-item .item-title {
+  font-weight: 400;
+  font-size: 24px;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.education_page .know-about-section .education-item .btn-read-more {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(2, 24, 37, 0.7);
+}
+.education_page .know-about-section .empty-text {
+  font-size: 3.4rem;
+  font-weight: 400;
+  color: #636363;
+}

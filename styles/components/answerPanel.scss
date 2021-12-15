@@ -1,0 +1,32 @@
+.answer-panel {
+    position: relative;
+    z-index: 5;
+    .title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 102%;
+        span {
+            font-family: FreeSerif;
+            font-style: italic;
+            font-size: 52px;
+        }
+    }
+    .answers-box {
+        .answer-box {
+            background: white;
+            border: 1px solid rgba(2, 24, 37, 0.1);
+            height: 100%;
+            h3 {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 125%;
+            }
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                color: rgba(2, 24, 37, 0.7);
+            }
+        }
+    }
+}

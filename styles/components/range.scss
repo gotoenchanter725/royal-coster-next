@@ -1,0 +1,39 @@
+.input-range {
+  .input-range__track {
+    height: 1.2rem;
+    background: #e6e9ef;
+    .input-range__track--active {
+      background: #e5d7bf;
+    }
+  }
+
+  .input-range__slider {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-top: -1.5rem;
+    background: #e5d7bf;
+    border: 2px solid white;
+    z-index: 2;
+  }
+  .input-range__slider-container {
+    .input-range__label-container {
+      position: absolute;
+      bottom: -50px;
+      transform: translateX(-50%);
+      font-size: 1.8rem;
+      color: #01215c;
+    }
+  }
+  .input-range__label {
+    &.input-range__label--max,
+    &.input-range__label--min {
+      .input-range__label-container {
+        position: absolute;
+        bottom: -24px;
+        transform: translateX(-50%);
+        font-size: 1.8rem;
+        color: rgba(1, 33, 92, 0.5);
+      }
+    }
+  }
+}

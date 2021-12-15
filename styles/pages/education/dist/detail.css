@@ -1,0 +1,129 @@
+.education-detail_page .state-section {
+  border-top: 1px solid rgba(2, 24, 37, 0.1);
+}
+.education-detail_page .state-section .link-panel {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.education-detail_page .state-section .link-panel * {
+  font-weight: 500;
+}
+.education-detail_page .state-section .link-panel a:not(.back-arrow) {
+  text-decoration: underline;
+}
+.education-detail_page .state-section .link-panel .back-arrow {
+  font-size: 1.6rem;
+}
+.education-detail_page .state-section .link-panel span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.education-detail_page .hero-section {
+  background: rgba(250, 211, 218, 0.5);
+}
+.education-detail_page .hero-section .r-container .title {
+  font-size: 4.8rem;
+  font-weight: 400;
+}
+.education-detail_page .hero-section .r-container .description {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 150%;
+}
+.education-detail_page .hero-section .r-container .banner-image {
+  overflow: hidden;
+}
+.education-detail_page .hero-section .r-container .banner-image img {
+  width: 100%;
+}
+.education-detail_page .hero-section .btn-play {
+  position: absolute;
+  bottom: 60px;
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+  font-size: 40px;
+  font-weight: lighter;
+  color: #c4c4c4;
+}
+.education-detail_page .hero-section .btn-play:hover {
+  border-color: #b6b6b6;
+  color: #b6b6b6;
+}
+@media (max-width: 767px) {
+  .education-detail_page .hero-section .r-container .title {
+    width: 80%;
+    font-size: 5.8rem;
+    line-height: 1;
+  }
+  .education-detail_page .hero-section .r-container .title span {
+    font-size: 5.8rem;
+    line-height: 98%;
+  }
+  .education-detail_page .hero-section .btn-play {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    bottom: 30px;
+    right: 25px;
+  }
+}
+@media (max-width: 575px) {
+  .education-detail_page .hero-section .r-container p {
+    font-size: 1.8rem;
+  }
+  .education-detail_page .hero-section .r-container .title {
+    width: 100%;
+    font-size: 3.4rem;
+  }
+  .education-detail_page .hero-section .r-container .title span {
+    font-size: 3.4rem;
+  }
+  .education-detail_page .hero-section .btn-play {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    bottom: 30px;
+    right: 25px;
+  }
+}
+.education-detail_page .detail-section .btn-panel {
+  border-bottom: 4px solid rgba(2, 24, 37, 0.1);
+}
+.education-detail_page .detail-section .btn-panel .btn-type {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(2, 24, 37, 0.5);
+  margin-bottom: -4px;
+}
+.education-detail_page .detail-section .btn-panel .btn-type.active {
+  color: #01215c;
+  font-weight: 500;
+  border-bottom: 4px solid #01215c;
+}
+@media (max-width: 960px) {
+  .education-detail_page .detail-section .btn-panel {
+    border-bottom: 0;
+  }
+  .education-detail_page .detail-section .btn-panel .btn-type {
+    margin-bottom: 5px;
+  }
+}
+.education-detail_page .detail-section .detail-panel .image-panel {
+  border: 1px solid rgba(2, 24, 37, 0.1);
+}
+.education-detail_page .detail-section .detail-panel .image-panel img {
+  width: 100%;
+}
+.education-detail_page .detail-section .detail-panel .detail-title {
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+.education-detail_page .detail-section .detail-panel .description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}

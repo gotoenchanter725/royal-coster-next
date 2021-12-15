@@ -1,0 +1,245 @@
+.checkout_page {
+  .link-panel {
+    font-size: 1.4rem;
+    border-top: 1px solid rgba(2, 24, 37, 0.1);
+    border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+    color: rgba(0, 0, 0, 0.5);
+    * {
+      font-weight: 500;
+    }
+    a {
+      &:not(.back-arrow) {
+        text-decoration: underline;
+      }
+    }
+    .back-arrow {
+      font-size: 1.6rem;
+    }
+    span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .main-panel {
+    .form-panel {
+      form {
+        border: 0;
+        .contact-panel {
+          .title-panel {
+            border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+            .title {
+              font-size: 2.4rem;
+              font-weight: 400;
+              color: #01215c;
+            }
+            a {
+              font-size: 1.8rem;
+              font-weight: 400;
+            }
+          }
+          .email-form {
+            font-size: 1.6rem;
+            font-weight: 400;
+            &:focus {
+              box-shadow: none;
+              border: 1px solid #01215c;
+            }
+          }
+          .form-check {
+            font-size: 1.6rem;
+            font-weight: 350;
+            input {
+              &:focus {
+                box-shadow: none;
+              }
+              &:checked {
+                background-color: #01215c;
+                border: #01215c;
+              }
+            }
+          }
+        }
+        .delivery-panel {
+          .invalid-feedback {
+            display: block;
+            font-size: 1.6rem;
+          }
+          input,
+          select {
+            font-size: 1.6rem;
+            font-weight: 400;
+            &:focus {
+              box-shadow: none;
+              border: 1px solid #01215c;
+            }
+          }
+          .title-panel {
+            border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+            h3 {
+              font-weight: 400;
+              font-size: 2.4rem;
+            }
+          }
+        }
+      }
+    }
+    .btn-panel {
+      .btn {
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+      .back-btn {
+        border: 1px solid rgba(2, 24, 37, 0.1);
+        color: rgba(2, 24, 37, 0.5);
+        &:hover {
+          background: rgba(2, 24, 37, 0.5);
+          color: white;
+        }
+      }
+    }
+    .round-panel {
+      border: 1px solid rgba(2, 24, 37, 0.1);
+      h3 {
+        color: rgba(1, 33, 92, 0.5);
+        font-weight: 400;
+        font-size: 1.6rem;
+      }
+      p {
+        color: #021825;
+        font-size: 1.6rem;
+        font-weight: 400;
+        flex: 1;
+      }
+      a {
+        color: #3086c8;
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+    }
+    .shipping-panel {
+      >.form-control {
+        border: 0;
+      }
+      .title-panel {
+        border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+        h3 {
+          font-size: 2.4rem;
+          font-weight: 400;
+          color: #01215c;
+        }
+      }
+
+      .standard-shipping-panel {
+        border: 1px solid rgba(2, 24, 37, 0.1);
+        input {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: 2px solid rgba(1, 33, 92, 0.2);
+          &:checked {
+            background-color: #01215c;
+            box-shadow: none;
+          }
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        h3 {
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+        p {
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+      }
+    }
+    .payment-method,
+    .billing-address-panel,
+    .remember-panel {
+      .title-panel {
+        border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+        h3 {
+          font-size: 2.4rem;
+          font-weight: 400;
+          color: #01215c;
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: 400;
+        }
+      }
+      .payment-panel {
+        border: 1px solid rgba(2, 24, 37, 0.1);
+        img {
+          width: 35px;
+          height: 20px;
+        }
+        .form-check {
+          &:not(.form-check:last-child) {
+            border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+          }
+          .form-check-input {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            &:checked {
+              background-image: url(/img/common/customRadio.png);
+              background-color: white;
+              border: 2px solid #3086c8;
+            }
+            &:focus {
+              box-shadow: none;
+            }
+          }
+          h3 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            &.payment-label {
+              color: rgba(2, 24, 37, 0.5);
+              font-size: 1.8rem;
+            }
+            &.remember-label {
+              color: #01215c;
+            }
+          }
+        }
+      }
+      .different-address-panel {
+        .address-panel {
+          height: 0px;
+          opacity: 0;
+          display: none;
+          transition-duration: 0.1s;
+          &.different {
+            height: auto;
+            opacity: 1;
+            display: block;
+            transition-duration: 0.7s;
+          }
+          .invalid-feedback {
+            display: block;
+            font-size: 1.6rem;
+          }
+          input,
+          select {
+            font-size: 1.6rem;
+            font-weight: 400;
+            &:focus {
+              box-shadow: none;
+              border: 1px solid #01215c;
+            }
+          }
+          .title-panel {
+            border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+            h3 {
+              font-weight: 400;
+              font-size: 2.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

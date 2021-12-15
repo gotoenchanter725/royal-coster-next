@@ -1,0 +1,36 @@
+
+  .collections {
+    position: relative;
+    padding-bottom: 10rem;
+    z-index: 2;
+    h2 {
+      padding-top: 5rem;
+      color: #01215c;
+      font-size: 3.6rem;
+    }
+    .swiper {
+      z-index: 5;
+      p {
+        font-size: 2rem;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 350px;
+      }
+    }
+    .btn-bottom-panel {
+      z-index: 5;
+      position: relative;
+    }
+    button {
+      &:focus-visible {
+        box-shadow: none;
+        outline: none;
+      }
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }

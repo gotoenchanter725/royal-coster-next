@@ -1,0 +1,86 @@
+.mail-list-panel {
+  height: 100%;
+  background: rgba(217, 229, 224, 0.15);
+
+  .text-panel {
+    .title {
+      font-weight: 350;
+      font-size: 4.8rem;
+      line-height: 110%;
+      color: #fad3da;
+      span {
+        font-family: FreeSerif;
+        font-weight: 400;
+        font-style: italic;
+      }
+    }
+    p {
+      font-weight: 350;
+      font-size: 16px;
+      line-height: 150%;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  .left-panel {
+    .title {
+      color: #01215c;
+    }
+    p {
+      color: rgba(2, 24, 37, 0.7);
+    }
+    .social-links {
+      a {
+        > div {
+          width: 50px;
+          height: 50px;
+          color: #01215c;
+          background: rgba(235, 235, 235, 0.719);
+          border-radius: 50%;
+          display: flex;
+          font-size: 2.4rem;
+          justify-content: center;
+          align-items: center;
+          opacity: 1;
+        }
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  .form-panel {
+    * {
+      font-size: 1.6rem;
+    }
+    button {
+      width: 100%;
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+  @media (max-width: 424px) {
+    button {
+      width: 100%;
+      font-size: 1.4rem;
+      padding: 10px 20px !important;
+      justify-content: center !important;
+      img {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 550px) {
+    .r-container {
+      h3 {
+        font-size: 2.4rem;
+      }
+      h2 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

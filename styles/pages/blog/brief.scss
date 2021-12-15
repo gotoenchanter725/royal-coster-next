@@ -1,0 +1,293 @@
+.brief_page {
+  .reading-progress-bar {
+    position: fixed;
+    top: 50px;
+    height: 5px;
+    background: #de8325;
+    z-index: 10;
+    opacity: 1;
+    @media (max-width: 991px) {
+      top: 60px;
+    }
+  }
+  .about-section {
+    .link-panel {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      font-size: 1.4rem;
+      color: rgba(0, 0, 0, 0.5);
+      * {
+        font-weight: 500;
+      }
+      a {
+        &:not(.back-arrow) {
+          text-decoration: underline;
+        }
+      }
+      span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        max-width: auto;
+        border-radius: 0;
+        border-color: #f2f3f4;
+        background: #f2f3f4;
+        font-size: 1.2rem;
+      }
+    }
+    .product-title {
+      font-size: 4.8rem;
+      font-weight: 350;
+      @media (max-width: 767px) {
+        font-size: 3.6rem;
+      }
+    }
+    .about-panel {
+      border-bottom: 1px solid #01215c;
+      .image-panel {
+        img {
+          width: 100%;
+          max-height: 450px;
+          object-fit: cover;
+        }
+      }
+      .text-panel {
+        .reporter-image {
+          border-radius: 50%;
+        }
+        .reporter-name {
+          color: #021825;
+          font-size: 2.4rem;
+        }
+        .reporter-description {
+          font-size: 1.4rem;
+          color: rgba(2, 24, 37, 0.7);
+          font-weight: 500;
+        }
+        .reporter-date {
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: rgba(1, 33, 92, 0.7);
+          * {
+            font-size: 1.4rem;
+            font-weight: 500;
+          }
+        }
+        .share-panel {
+          h3 {
+            font-weight: 500;
+            font-size: 1.8rem;
+          }
+          .links-panel {
+            .btn {
+              font-size: 1.8rem;
+              color: rgba(1, 33, 92, 0.7);
+            }
+          }
+          .line {
+            height: 2px;
+            position: relative;
+            opacity: 1;
+            background: rgba(1, 33, 92, 0.1);
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              height: 2px;
+              width: 35%;
+              background: #01215c;
+            }
+          }
+        }
+      }
+    }
+  }
+  .article-section {
+    position: relative;
+    .link-panel-cover {
+      position: absolute;
+      left: 0px;
+      top: 50px;
+      height: calc(100% - 150px);
+      .link-panel {
+        position: sticky;
+        top: 100px;
+        width: max-content;
+        .link-item {
+          width: 60px;
+          height: 60px;
+          border: 1px solid rgba(1, 33, 92, 0.1);
+          border-radius: 50%;
+          font-size: 2.5rem;
+          color: #01215c;
+          & > * {
+            transition-duration: 0.7s;
+          }
+          &:hover {
+            & > * {
+              color: gray;
+              transition-duration: 0.7s;
+            }
+          }
+        }
+      }
+    }
+    .article-panel {
+      padding-left: 120px;
+      padding-right: 120px;
+      @media (max-width: 1024px) {
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+      @media (max-width: 767px) {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      img {
+        width: 100% !important;
+        border-radius: 12px !important;
+        object-fit: cover;
+        max-height: 320px;
+      }
+      p {
+        font-size: 1.8rem !important;
+        font-weight: 350 !important;
+        color: #021825 !important;
+        line-height: 3.6rem !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+      }
+      h2,
+      h3 {
+        color: #01215c !important;
+        font-size: 3.6rem !important;
+        font-weight: 300 !important;
+        margin-top: 50px !important;
+        margin-bottom: 30px !important;
+      }
+      h3 {
+        font-size: 3rem !important;
+      }
+      ol {
+        padding-top: 20px;
+        font-size: 2rem;
+      }
+      ul {
+        font-size: 2rem;
+      }
+    }
+  }
+  .select-product-section {
+    .title-panel {
+      h3 {
+        font-size: 3.6rem;
+        font-weight: 350;
+      }
+      h2 {
+        font-size: 4.8rem;
+        font-weight: 400;
+        font-family: FreeSerif;
+        font-style: italic;
+      }
+      a {
+        font-size: 1.6rem;
+        color: rgba(2, 24, 37, 0.7);
+      }
+    }
+    .product-panel {
+      .product-image {
+        overflow: hidden;
+        background: #efefef;
+        border: 1px solid #efefef;
+        img {
+          width: 100%;
+          transition-duration: 0.7s;
+        }
+        &:hover {
+          img {
+            transform: scale(1.3);
+            transition-duration: 0.7s;
+          }
+        }
+      }
+      .favor-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2.5rem;
+        cursor: pointer;
+
+        &:hover {
+          transition-duration: 0.3s;
+          font-size: 2.7rem;
+        }
+
+        .favor {
+          color: #eb162e;
+          display: none;
+        }
+
+        .unfavor {
+          display: block;
+        }
+
+        &.favor {
+          .favor {
+            display: block;
+          }
+
+          .unfavor {
+            display: none;
+          }
+        }
+      }
+      .product-info {
+        .product-id {
+          color: rgba(2, 24, 37, 0.7);
+          font-size: 1.6rem;
+          @media (max-width: 767px) {
+            font-size: 1.4rem;
+          }
+        }
+        .product-title {
+          font-size: 2.4rem;
+          font-weight: 350;
+          @media (max-width: 767px) {
+            font-size: 1.8rem;
+          }
+        }
+        .product-cost {
+          font-size: 1.8rem;
+          @media (max-width: 767px) {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      .btn-panel {
+        .btn-cart {
+          font-size: 1.4rem;
+          font-weight: 400;
+          &:hover {
+            background: transparent;
+            border-color: #01215c;
+            color: #01215c;
+          }
+          @media (max-width: 767px) {
+            font-size: 1.2rem;
+          }
+        }
+        .btn-more-info {
+          font-weight: 400;
+          font-size: 1.4rem;
+          background: transparent;
+          border: 1px solid rgba(1, 33, 92, 0.1);
+          &:hover {
+            border-color: #01215c;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+  .visit-panel {
+    overflow: hidden;
+    .text-panel {
+      .title {
+        font-weight: 350;
+        font-size: 4.8rem;
+        line-height: 110%;
+        color: #fad3da;
+        span {
+          font-family: FreeSerif;
+          font-weight: 400;
+          font-style: italic;
+        }
+      }
+      p {
+        font-weight: 350;
+        font-size: 16px;
+        line-height: 150%;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    .bg-panel {
+      background: linear-gradient(90deg, #01215c 7.93%, rgba(1, 33, 92, 0) 100%), url(/img/common/Rectangle72.png);
+      background-size: cover;
+      min-height: 300px;
+      @media (max-width: 991px) {
+        background: linear-gradient(0deg, #01215c 3%, rgba(1, 33, 92, 0) 50%), url(/img/common/Rectangle72.png);
+        background-size: cover;
+      }
+    }
+    .form-panel {
+      background: #01215c;
+      .btn-panel {
+        width: 100%;
+        .btn {
+          * {
+            font-size: 2.4rem;
+          }
+          span {
+            font-size: 1.6rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    @media (max-width: 550px) {
+      .r-container {
+        h3 {
+          font-size: 2.4rem;
+        }
+        h2 {
+          font-size: 4rem;
+        }
+        p {
+          font-size: 1.6rem;
+        }
+        .contact-btn-group {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }

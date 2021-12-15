@@ -1,0 +1,63 @@
+#dropHintModal {
+  width: 50% !important;
+  max-width: 630px !important;
+  min-width: 350px !important;
+  .modal-title {
+    color: #01215c;
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+  label {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgba(1, 33, 92, 0.7);
+  }
+  .btn-add-friend {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #01215c !important;
+    &:hover {
+      background: transparent;
+      border-color: #01215c;
+      color: #01215c !important;
+    }
+  }
+  .btn-send {
+    font-size: 1.8rem;
+    width: 100%;
+    font-weight: 400;
+    color: white !important;
+    &:hover {
+      color: #01215c !important;
+    }
+  }
+  .form-control {
+    border: 1px solid rgba(1, 33, 92, 0.2);
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  textarea {
+    border-radius: 8px;
+    font-size: 1.6rem;
+    border: 1px solid rgba(1, 33, 92, 0.2);
+    font-weight: 400;
+    resize: none;
+  }
+  .description {
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+  .form-check-input {
+      width: 20px;
+      height: 20px;
+      &:checked {
+          background-color: #01215c;
+          border-color: #01215c;
+      }
+      &:focus {
+          box-shadow: none;
+      }
+  }
+}

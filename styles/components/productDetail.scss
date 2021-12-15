@@ -1,0 +1,83 @@
+.detail-section {
+  .title {
+    border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+    font-size: 3.6rem;
+    font-weight: 350;
+  }
+  .text-panel {
+    h3 {
+      font-size: 3.2rem;
+      font-weight: 500;
+    }
+    .full-description {
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 160%;
+      color: rgba(2, 24, 37, 0.7);
+    }
+    @media (max-width: 575px) {
+      h3 {
+        font-size: 2.2rem;
+      }
+p {
+  font-size: 1.6rem;
+}
+    }
+  }
+  .info-panel {
+    .nav-tabs {
+      .nav-item {
+        border: 0;
+        &.show {
+          .nav-link {
+            border-color: transparent !important;
+            border-bottom: 2px solid #01215c !important;
+          }
+        }
+      }
+      .nav-link {
+        border: 0;
+        color: rgba(1, 33, 92, 0.5);
+        font-size: 1.8rem;
+        &.active {
+          color: #01215c;
+          border-color: transparent !important;
+          border-bottom: 2px solid #01215c !important;
+        }
+        &:hover {
+          border: 0;
+        }
+        &:focus {
+          border: 0;
+        }
+      }
+    }
+  }
+  .tab-content {
+    .title-panel {
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+    .informations {
+      font-size: 1.6rem;
+      .info-title-panel {
+        background: white;
+        border-radius: 5px;
+        &.grey-mode {
+          background: #f6f6f6;
+          @media (max-width: 767px) {
+            background-color: white;
+          }
+        }
+        &.md-grey-mode {
+          @media (max-width: 767px) {
+            background: #f6f6f6;
+          }
+        }
+        .information-name {
+          color: #021825;
+        }
+      }
+    }
+  }
+}

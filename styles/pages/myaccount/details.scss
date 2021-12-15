@@ -1,0 +1,63 @@
+.details_panel {
+	.title {
+		font-family: FreeSerif;
+		font-style: italic;
+		font-weight: 400;
+		font-size: 36px;
+		color: #021825;
+		border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+		padding-bottom: 18px;
+		margin-bottom: 24px;
+	}
+	input {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 17px;
+		letter-spacing: 0.05em;
+		color: rgb(1, 33, 92);
+		border: 1px solid rgba(1, 33, 92, 0.1);
+		border-radius: 9px;
+		&:focus {
+			border-color: #01215c;
+			box-shadow: none;
+		}
+	}
+	.btn {
+		border-radius: 9px;
+		width: 100%;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 17px;
+	}
+	.confirm-panel {
+		border-top: 1px solid rgba(2, 24, 37, 0.1);
+	}
+	.sub-title {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 23px;
+		color: #021825;
+	}
+	.edit-panel {
+		padding-bottom: 14px;
+		.form-control {
+			margin-bottom: 16px;
+		}
+	}
+	.btn-reset-password {
+		padding: 16px 24px;
+	}
+	.confirm-panel {
+		padding-top: 30px;
+		.form-control {
+			margin-bottom: 18px;
+		}
+		.btn-apply {
+			padding: 16px 24px;
+		}
+	}
+	.error {
+		font-size: 1.4rem;
+		color: red;
+	}
+}

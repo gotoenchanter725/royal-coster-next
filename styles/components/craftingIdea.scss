@@ -1,0 +1,96 @@
+.crafting-idea-section {
+  padding-top: 10rem;
+  @media (max-width: 767px) {
+    padding-top: 5rem;
+  }
+  & .crafting_main-panel {
+    background: url(/img/bespoke/idea_bg.png);
+    @media (max-width: 575px) {
+      background: white;
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  .title {
+    font-size: 6.4rem;
+    font-weight: 400;
+    span {
+      font-family: FreeSerif;
+      font-style: italic;
+      font-size: 7rem;
+    }
+    @media (max-width: 425px) {
+      font-size: 4.2rem;
+      span {
+        font-size: 4.5rem;
+      }
+    }
+  }
+  .description {
+    color: rgba(2, 24, 37, 0.8);
+    font-size: 2.4rem;
+  }
+  .btn-panel {
+    .btn {
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+    .pink-btn {
+      &:hover {
+        border-color: #01215c;
+        color: #01215c;
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    .bg-panel {
+      min-height: 400px;
+      background: url(/img/bespoke/idea_bg.png);
+      background-position-x: -60px;
+      background-position-y: 35px;
+      background-repeat: no-repeat;
+      position: relative;
+      overflow: hidden;
+      .pink-box {
+        content: "";
+        position: absolute;
+        background: #fad3da;
+        opacity: 0.7;
+        filter: blur(200px);
+        transform: rotate(-45deg);
+        right: 40%;
+        bottom: 0;
+        width: 35%;
+        height: 90%;
+      }
+      .blue-box {
+        content: "";
+        position: absolute;
+        background: #13439b;
+        opacity: 0.3;
+        filter: blur(200px);
+        transform: rotate(-45deg);
+        right: 0;
+        bottom: 0;
+        width: 35%;
+        height: 90%;
+      }
+    }
+    .title {
+      font-size: 3.6rem;
+      span {
+        font-size: 3.6rem;
+      }
+    }
+    .description {
+      font-size: 1.8rem;
+    }
+    .btn-panel {
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

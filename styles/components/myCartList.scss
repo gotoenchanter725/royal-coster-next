@@ -1,0 +1,94 @@
+.my-cart-list {
+  background: #f6f6f6;
+  border: 1px solid rgba(2, 24, 37, 0.1);
+  .item-detail {
+    .item-info {
+      .cart-image {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+      .text-panel {
+        .title {
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+        p {
+          font-size: 1.4rem;
+          color: rgba(2, 24, 37, 0.7);
+        }
+      }
+    }
+    .item-price {
+      span {
+        font-family: FreeSerif;
+        font-style: italic;
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+      @media (max-width: 575px) {
+        transform: translateY(-98%);
+      }
+    }
+  }
+  .discount-panel {
+    border-top: 1px solid rgba(2, 24, 37, 0.1);
+    border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+    .discount-code {
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+    .btn-discount {
+      //background: rgba(2, 24, 37, 0.1);
+      //color: rgba(2, 24, 37, 0.5);
+      font-size: 1.6rem;
+      //&:hover {
+       // background: rgba(2, 24, 37, 0.5);
+        //color: white;
+      //}
+    }
+  }
+  .sub-price {
+    border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+    .sub-total {
+      * {
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+    }
+    .shipping-price {
+      color: rgba(2, 24, 37, 0.5);
+      .title {
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+      .content {
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+  }
+  .final-price {
+    .total-price {
+      * {
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+    }
+    .result-panel {
+      border: 1px solid rgba(2, 24, 37, 0.1);
+      border-radius: 1.2rem;
+      .title {
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+      .content {
+        span {
+          font-family: FreeSerif;
+            font-style: italic;
+            font-size: 2.4rem;
+        }
+      }
+    }
+  }
+}

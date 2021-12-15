@@ -1,0 +1,85 @@
+#enquiryModalDialog {
+  max-width: 1024px !important;
+  .modal-content {
+    box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.05);
+    .modal-title {
+      font-size: 2.4rem;
+      color: #01215c;
+      font-weight: 500;
+    }
+    .modal-body {
+      .title {
+        font-size: 2.4rem;
+        color: #01215c;
+        font-weight: 400;
+      }
+      label {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #01215c;
+      }
+      .form-control,
+      .form-select {
+        color: black;
+        font-weight: 500;
+        font-size: 1.4rem;
+        &:focus {
+          box-shadow: none;
+          border-color: #01215c;
+        }
+      }
+      .telephone-form {
+        .phoneNumber-prefix {
+          width: 100px;
+          position: relative;
+          * {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #01215c;
+          }
+          .symbol {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        #phoneNumber {
+          flex: 1;
+        }
+      }
+      .safe-panel {
+        h3 {
+          font-size: 1.4rem;
+          color: rgba(1, 33, 92, 0.5);
+          font-weight: 500;
+        }
+        label {
+          flex: 1;
+          font-size: 1.4rem;
+          color: black;
+          font-weight: 400;
+        }
+        #safeMode {
+          width: 2.4rem;
+          height: 2.4rem;
+          &:focus {
+            box-shadow: none;
+          }
+          &:checked {
+            background-color: #01215c;
+            border-color: #01215c;
+          }
+        }
+      }
+      .btn-request {
+        font-size: 1.6rem;
+        color: #01215c;
+        font-weight: 500;
+        &:hover {
+          border-color: #01215c;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.customer-section {
+    .top-panel {
+      border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+      .title {
+        font-size: 3.6rem;
+        font-weight: 350;
+      }
+      button {
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+    .customer-slider-item {
+      max-height: 100%;
+      .cover-image {
+        img {
+          width: 100%;
+          min-height: 100%;
+          max-height: 400px;
+          object-fit: cover;
+          @media (max-width: 575px) {
+            max-height: 300px;
+          }
+        }
+      }
+      .text-panel {
+        background: #f6f6f6;
+        .customer-title {
+          .customer-avatar {
+            border-radius: 50%;
+            width: 47px;
+            height: 47px;
+            overflow: hidden;
+            img {
+              widows: 100%;
+            }
+          }
+          .customer-info {
+            h3 {
+              font-size: 1.8rem;
+              font-weight: 500;
+            }
+            h4 {
+              color: rgba(2, 24, 37, 0.5);
+              font-weight: 400;
+              font-size: 1.3rem;
+            }
+          }
+        }
+        .description {
+          color: #021825;
+          font-size: 1.8rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }

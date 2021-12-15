@@ -1,0 +1,53 @@
+.about-slider {
+  position: relative;
+  z-index: 2;
+
+  .about-slider {
+    z-index: 5;
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 400;
+    }
+    p {
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+    .image-panel {
+      img {
+        width: 100%;
+      }
+    }
+    a {
+      font-size: 1.4rem;
+      font-weight: 500;
+      &:hover {
+        p {
+          color: black;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      h3 {
+        font-size: 2rem;
+      }
+      p,
+      a {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .btn-bottom-panel {
+    z-index: 5;
+    position: relative;
+    button {
+      &:focus-visible {
+        box-shadow: none;
+        outline: none;
+      }
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }
+}

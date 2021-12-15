@@ -1,0 +1,35 @@
+.watch_item-panel {
+	.title-panel {
+		border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+		.title {
+			font-weight: 400;
+			font-size: 36px;
+			line-height: 120%;
+		}
+	}
+	.item-panel {
+		.image-panel {
+			border: 1px solid rgba(2, 24, 37, 0.1);
+			img {
+				width: 100%;
+			}
+		}
+		.item-title {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 120%;
+			color: #021825;
+		}
+		.item-id {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 120%;
+			color: rgba(2, 24, 37, 0.7);
+		}
+		.item-cost {
+			font-weight: 400;
+			font-size: 24px;
+			color: #01215c;
+		}
+	}
+}

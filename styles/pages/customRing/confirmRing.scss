@@ -1,0 +1,598 @@
+.confirmRing_page {
+  .state-section {
+    border-top: 1px solid rgba(2, 24, 37, 0.1);
+    .link-panel {
+      font-size: 1.4rem;
+      color: rgba(0, 0, 0, 0.5);
+      * {
+        font-weight: 500;
+      }
+      a {
+        &:not(.back-arrow) {
+          text-decoration: underline;
+        }
+      }
+      .back-arrow {
+        font-size: 1.6rem;
+      }
+      span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .setting-state-panel {
+      background: #ebf1f2;
+      position: relative;
+      .setting-state {
+        &:not(.setting-state:last-child) {
+          border-right: 1px solid rgba(2, 24, 37, 0.1);
+          @media (max-width: 767px) {
+            // border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+            border-right: 0;
+          }
+        }
+        &.selected-ring-panel {
+          cursor: pointer;
+          .hover-panel {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgb(255, 255, 255);
+            transform: translateY(100%);
+            box-shadow: 0 10px 10px rgb(177, 177, 177);
+            visibility: hidden;
+            opacity: 0;
+            transition-duration: 0.5s;
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 10%;
+              transform: translateY(-100%);
+              width: 0;
+              height: 0;
+              border-left: 16px solid transparent;
+              border-right: 16px solid transparent;
+              border-bottom: 20px solid #ffffff;
+            }
+            .ring-info-panel {
+              .ring-title-panel {
+                img {
+                  border: 1px solid rgba(2, 24, 37, 0.1);
+                }
+              }
+              .text-panel {
+                h3 {
+                  font-size: 1.4rem;
+                  font-weight: 400;
+                  font-family: FreeSerif;
+                  font-style: italic;
+                  color: rgba(1, 33, 92, 0.5);
+                }
+                h4 {
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 15px;
+                  color: rgba(2, 24, 37, 0.7);
+                }
+              }
+              .cost-panel {
+                h3 {
+                  font-family: FreeSerif;
+                  font-style: italic;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 18px;
+                  color: #021825;
+                }
+                h4 {
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 15px;
+                  color: rgba(2, 24, 37, 0.7);
+                }
+              }
+            }
+            .btn-panel {
+              button {
+                width: 100%;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 17px;
+                &.btn-view {
+                  background: #021825;
+                  color: white;
+                  border: 1px solid transparent;
+                  &:hover {
+                    border-color: #021825;
+                    color: #021825;
+                    background: transparent;
+                  }
+                }
+                &.btn-change {
+                  border: 1px solid rgba(2, 24, 37, 0.1);
+                  color: rgba(2, 24, 37, 0.7);
+                  &:hover {
+                    border-color: transparent;
+                    background: rgba(2, 24, 37, 0.1);
+                    color: black;
+                  }
+                }
+              }
+            }
+          }
+          &:hover {
+            .hover-panel {
+              opacity: 1;
+              visibility: unset;
+              transition-duration: 0.7s;
+            }
+          }
+        }
+        .number {
+          width: 52px;
+          height: 52px;
+          border: 2px solid rgba(1, 33, 92, 0.1);
+          border-radius: 50%;
+          font-family: FreeSelf;
+          font-size: 3.2rem;
+          font-style: italic;
+          color: rgba(1, 33, 92, 0.5);
+        }
+        &.active {
+          .number {
+            background: #01215c;
+            border-color: #01215c;
+            color: white;
+          }
+        }
+        @media (max-width: 575px) {
+          h3 {
+            font-size: 1.4rem !important;
+            color: rgba(1, 33, 92, 0.5) !important;
+          }
+          &.active {
+            h3 {
+              color: #01215c !important;
+            }
+          }
+          .number {
+            width: 27px;
+            height: 27px;
+            font-size: 1.4rem;
+          }
+        }
+        .title {
+          h3 {
+            font-size: 2.4rem;
+            color: #01215c;
+            font-weight: 400;
+          }
+          p {
+            font-size: 1.4rem;
+            color: rgba(2, 24, 37, 0.5);
+          }
+        }
+      }
+    }
+    .ring-types {
+      .filter-item {
+        width: 135px;
+        height: 105px;
+        border: 1px solid rgba(1, 33, 92, 0.1);
+        h3 {
+          font-size: 1.2rem;
+          font-weight: 400;
+        }
+        &:focus {
+          border: 1px solid #01215c;
+          h3 {
+            font-weight: 500;
+          }
+        }
+        .image-panel {
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+    .setting-karat {
+      .karat-panel {
+        .title {
+          font-size: 1.8rem;
+          font-weight: 400;
+          color: #01215c;
+        }
+        .karat-list {
+          border-top: 1px solid rgba(2, 24, 37, 0.1);
+          .karat-item {
+            .karat {
+              font-size: 1.4rem;
+              color: rgba(2, 24, 37, 0.4);
+              border: 2px solid transparent;
+              &.white {
+                background: #eeeeee;
+              }
+              &.yellow {
+                background: #efd9a7;
+              }
+              &.platinium {
+                background: #dbdbdb;
+              }
+              &.rose-gold {
+                background: #ffcbcb;
+              }
+            }
+            p {
+              font-size: 1.4rem;
+              color: rgba(1, 33, 92, 0.5);
+            }
+            &:focus {
+              box-shadow: none;
+              .karat {
+                border: 2px solid #01215c;
+              }
+              p {
+                color: #01215c;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .confirm-section {
+    .show-product {
+      .tile-product {
+        button {
+          border: 1px solid rgba(2, 24, 37, 0.1);
+          overflow: hidden;
+          img {
+            transition-duration: 0.5s;
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+          }
+          &:focus {
+            box-shadow: none;
+            opacity: 0.6;
+          }
+          &:hover {
+            img {
+              transition-duration: 0.7s;
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+      .main-product {
+        .image-panel {
+          border: 1px solid rgba(2, 24, 37, 0.1);
+          overflow: hidden;
+          img {
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            transition-duration: 0.5s;
+          }
+          &:hover {
+            img {
+              transition-duration: 0.7s;
+              transform: scale(1.2);
+            }
+          }
+        }
+        .btn-panel {
+          button {
+            background: #f6f6f6;
+            font-size: 1.6rem;
+            font-weight: 400;
+            &:hover {
+              background: rgb(211, 211, 211);
+            }
+          }
+        }
+      }
+    }
+    .show-setting {
+      .title-panel {
+        width: 85%;
+        h3 {
+          font-size: 3.6rem;
+        }
+        .type {
+          font-family: FreeSerif, sans-serif;
+          color: rgba(1, 33, 92, 0.5);
+          font-style: italic;
+          font-weight: 400;
+        }
+        .title {
+          font-weight: 350;
+        }
+        .description {
+          font-size: 1.6rem;
+          color: rgba(2, 24, 37, 0.5);
+          font-weight: 500;
+        }
+        .ring-info {
+          .text-panel {
+            .shape {
+              font-family: FreeSerif;
+              font-style: italic;
+              font-weight: normal;
+              font-size: 2.4rem;
+              line-height: 31px;
+              color: rgba(1, 33, 92, 0.5);
+            }
+            .ring-name {
+              font-style: normal;
+              font-weight: 350;
+              font-size: 2.4rem;
+              line-height: 120%;
+              color: #021825;
+            }
+            .ring-id {
+              font-weight: 500;
+              font-size: 1.4rem;
+              line-height: 18px;
+              letter-spacing: 0.05em;
+              color: rgba(2, 24, 37, 0.5);
+            }
+            .ring-categories {
+              font-weight: 350;
+              font-size: 1.8rem;
+              line-height: 23px;
+              color: #021825;
+            }
+            .btn-change-setting {
+              border: 1px solid rgba(1, 33, 92, 0.1);
+              font-size: 1.1rem;
+              line-height: 14px;
+              color: rgba(2, 24, 37, 0.7);
+              font-weight: 400;
+              &:hover {
+                background: rgba(2, 24, 37, 0.5);
+                color: white;
+              }
+            }
+          }
+        }
+        @media (max-width: 575px) {
+          width: 100%;
+          .title,
+          .type {
+            font-size: 2.4rem;
+          }
+          .description {
+            font-size: 1.4rem;
+          }
+          .ring-info {
+            .info-image {
+              margin-top: 5px;
+              width: 23px;
+              height: 20px;
+            }
+            .text-panel {
+              .shape {
+                font-size: 1.8rem;
+              }
+              .ring-name {
+                font-size: 1.8rem;
+              }
+              .ring-id {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+      .confirm-panel {
+        .material-setting-panel {
+          border-top: 1px solid rgba(2, 24, 37, 0.1);
+          .metal-confirm {
+            label {
+              font-size: 1.6rem;
+            }
+            .material-box {
+              button {
+                border-radius: 50%;
+                border: 1px solid rgba(1, 33, 92, 0.05);
+                background: white;
+                width: 34px;
+                height: 34px;
+                &:focus {
+                  box-shadow: none;
+                  border: 1px solid #01215c;
+                }
+              }
+            }
+          }
+          .carat-confirm {
+            label {
+              font-size: 1.6rem;
+              line-height: 21px;
+              color: #021825;
+            }
+            select {
+              font-size: 1.5rem;
+              font-weight: 400;
+              &:focus {
+                box-shadow: none;
+              }
+            }
+          }
+        }
+        .selector-panel {
+          font-size: 1.6rem;
+          font-weight: 400;
+          border-top: 1px solid rgba(2, 24, 37, 0.1);
+          border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+          h3 {
+            font-weight: 400;
+            font-size: 1.6rem;
+          }
+          .btn-find-size {
+            border: 1px solid rgba(1, 33, 92, 0.1);
+            color: rgba(2, 24, 37, 0.5);
+            font-weight: 400;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            &:focus {
+              box-shadow: none;
+            }
+            &:hover {
+              background: rgba(2, 24, 37, 0.5);
+              color: white;
+            }
+          }
+          select {
+            font-size: 1.5rem;
+            font-weight: 400;
+            &:focus {
+              box-shadow: none;
+            }
+          }
+          .btn-add-engraving {
+            font-size: 1.5rem;
+            font-weight: 400;
+            border: 1px solid rgba(1, 33, 92, 0.1);
+            border-radius: 8px;
+            width: 100%;
+            svg {
+              font-size: 2rem;
+            }
+          }
+        }
+        .cost-panel {
+          border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+          .price-panel {
+            h4 {
+              font-size: 1.2rem;
+              color: rgba(2, 24, 37, 0.5);
+              font-weight: 400;
+            }
+            h3 {
+              font-family: FreeSerif;
+              font-style: italic;
+              font-size: 3.6rem;
+              color: #01215c;
+            }
+          }
+          .amount-panel {
+            button {
+              font-size: 2.4rem;
+              border: 1px solid rgba(2, 24, 37, 0.1);
+              width: 50px;
+              height: 50px;
+              &:focus {
+                box-shadow: none;
+              }
+              &:hover {
+                background: rgba(2, 24, 37, 0.1);
+              }
+            }
+            span {
+              font-size: 2.4rem;
+            }
+          }
+        }
+        .confirm-box {
+          border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+          .favor-btn {
+            background: rgba(2, 24, 37, 0.05);
+            color: rgba(1, 33, 92, 0.3);
+            font-size: 1.8rem;
+            &.favor {
+              color: red;
+            }
+            &:focus {
+              box-shadow: none;
+            }
+            &:hover {
+              * {
+                opacity: 0.8;
+              }
+            }
+          }
+          .setting-btn-panel {
+            flex: 1;
+            a {
+              font-size: 1.8rem;
+              font-weight: 400;
+            }
+            p {
+              font-size: 1.4rem;
+            }
+          }
+          @media (max-width: 818px) {
+            justify-content: center !important;
+            .favor-btn {
+              margin-bottom: 20px;
+            }
+          }
+        }
+        .help-panel {
+          font-size: 1.6rem;
+        }
+        .schedule-panel {
+          border-top: 1px solid rgba(2, 24, 37, 0.1);
+          font-size: 1.6rem;
+          button {
+            font-size: 1.4rem;
+            border: 1px solid rgba(2, 24, 37, 0.1);
+            border-radius: 6px;
+            &:hover {
+              background: #01215c;
+              color: white;
+              border-color: #01215c;
+            }
+          }
+        }
+        .share-btn-panel {
+          button {
+            background: #f6f6f6;
+            font-size: 1.6rem;
+            font-weight: 400;
+            &:hover {
+              background: rgb(211, 211, 211);
+            }
+          }
+        }
+        @media (max-width: 575px) {
+          .material-setting-panel {
+            .metal-confirm,
+            .carat-confirm {
+              label {
+                font-size: 1.4rem;
+              }
+            }
+          }
+          .selector-panel {
+            h3 {
+              font-size: 1.4rem;
+            }
+          }
+          .cost-panel {
+            .price-panel {
+              h3 {
+                font-size: 2.4rem;
+              }
+            }
+            .amount-panel {
+              button {
+                width: 40px;
+                height: 40px;
+              }
+            }
+          }
+          .help-panel {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}

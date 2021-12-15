@@ -1,0 +1,163 @@
+.watch-brand_page .hero-section {
+  background: linear-gradient(90deg, #000000 34.34%, rgba(0, 0, 0, 0) 43.65%), url(/img/watch/brand-page_banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.watch-brand_page .hero-section .r-container {
+  padding-top: 20rem;
+  padding-bottom: 5rem;
+}
+@media (max-width: 991px) {
+  .watch-brand_page .hero-section .r-container {
+    padding-top: 10rem;
+  }
+}
+.watch-brand_page .hero-section .r-container p {
+  font-size: 2.4rem;
+  color: white;
+}
+.watch-brand_page .hero-section .r-container .title {
+  font-size: 7.2rem;
+  font-weight: 400;
+  line-height: 102%;
+  color: white;
+}
+.watch-brand_page .hero-section .r-container .title > span {
+  font-family: FreeSerif;
+  font-weight: 400;
+  font-size: 7.6rem;
+}
+.watch-brand_page .hero-section .r-container .description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 767px) {
+  .watch-brand_page .hero-section .r-container {
+    padding-top: 11rem;
+    padding-bottom: 3rem;
+  }
+  .watch-brand_page .hero-section .r-container .title {
+    width: 80%;
+    font-size: 5.8rem;
+    line-height: 1;
+  }
+  .watch-brand_page .hero-section .r-container .title span {
+    font-size: 5.8rem;
+    line-height: 98%;
+  }
+}
+@media (max-width: 575px) {
+  .watch-brand_page .hero-section .r-container .title {
+    width: 50%;
+    font-size: 4.2rem;
+  }
+  .watch-brand_page .hero-section .r-container .title span {
+    font-size: 4.2rem;
+  }
+}
+.watch-brand_page .guide-section {
+  background: #f7f3ec;
+}
+.watch-brand_page .guide-section .title {
+  font-size: 4.8rem;
+  font-weight: 400;
+  color: #01215c;
+}
+.watch-brand_page .guide-section .guide-text {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 400;
+  color: rgba(2, 24, 37, 0.8);
+}
+@media (max-width: 575px) {
+  .watch-brand_page .guide-section .title {
+    width: 60%;
+    font-size: 3.6rem;
+  }
+  .watch-brand_page .guide-section .guide-text {
+    font-size: 1.8rem;
+  }
+}
+.watch-brand_page .watch-section .top-bar {
+  border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+}
+.watch-brand_page .watch-section .top-bar .btn-panel .btn {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.watch-brand_page .watch-section .top-bar .btn-panel .btn.active {
+  border-bottom: 5px solid #01215c;
+}
+.watch-brand_page .watch-section .top-bar .search-box {
+  width: 300px;
+  background: #f2f3f4;
+}
+.watch-brand_page .watch-section .top-bar .search-box label {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.watch-brand_page .watch-section .top-bar .search-box .form-select {
+  padding-right: 45px !important;
+  flex: 1;
+  background-color: transparent;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 1.4rem;
+  border: 0;
+  text-transform: uppercase;
+  color: #01215c;
+}
+.watch-brand_page .watch-section .top-bar .search-box .form-select:focus {
+  box-shadow: none;
+}
+@media (max-width: 575px) {
+  .watch-brand_page .watch-section .top-bar .search-box {
+    width: 100%;
+  }
+}
+.watch-brand_page .banner-section {
+  background: url(/img/watch/brand-page_banner-bg-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.watch-brand_page .banner-section .title {
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 120%;
+  color: #ffffff;
+}
+@media (max-width: 575px) {
+  .watch-brand_page .banner-section .title {
+    font-size: 2.8rem;
+  }
+}
+.watch-brand_page .banner-section .description {
+  font-weight: 350;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.7);
+}
+.watch-brand_page .banner-section .btn {
+  font-size: 1.6rem;
+}
+.watch-brand_page .history-section img {
+  width: 100%;
+  object-fit: cover;
+}
+.watch-brand_page .history-section h3 {
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 130%;
+}
+.watch-brand_page .history-section p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+}
+.watch-brand_page .history-section .btn {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 18px;
+}

@@ -1,0 +1,132 @@
+.vip_page {
+  .hero-section {
+    background: url(/img/vip/banner_bg.png), url(/img/vip/banner_cover-bg.png), linear-gradient(0deg, #021825, #021825);
+    background-size: contain;
+    background-position: center;
+    .r-container {
+      padding-top: 8rem;
+      height: 95vh;
+      mix-blend-mode: luminosity;
+      @media (max-width: 991px) {
+        padding-top: 6rem;
+      }
+      p {
+        font-size: 2.4rem;
+        color: white;
+      }
+      .title {
+        font-size: 7.2rem;
+        font-weight: 400;
+        color: white;
+        & > span {
+          font-family: FreeSerif;
+          font-weight: 400;
+          font-style: italic;
+          font-size: 7.6rem;
+          line-height: 100%;
+        }
+      }
+      .description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    @media (max-width: 1100px) {
+      background-size: cover;
+    }
+    @media (max-width: 767px) {
+      background-size: cover;
+      .r-container {
+        height: 85vh;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        .title {
+          width: 80%;
+          font-size: 5.8rem;
+          line-height: 1;
+          span {
+            font-size: 5.8rem;
+            line-height: 98%;
+          }
+        }
+      }
+    }
+    @media (max-width: 575px) {
+      .r-container {
+        height: 62vh;
+        p {
+          font-size: 1.8rem;
+        }
+        .title {
+          width: 100%;
+          font-size: 3.4rem;
+          span {
+            font-size: 3.4rem;
+          }
+        }
+      }
+    }
+  }
+  .guide-section {
+    background: #f7f3ec;
+    .title {
+      font-size: 4.8rem;
+      font-weight: 400;
+      color: #01215c;
+    }
+    .guide-text {
+      font-size: 24px;
+      line-height: 150%;
+      font-weight: 400;
+      color: rgba(2, 24, 37, 0.8);
+    }
+    @media (max-width: 575px) {
+      .title {
+        width: 100%;
+        font-size: 3.6rem;
+      }
+      .guide-text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .benifit-section {
+    .top-panel {
+      .text-panel {
+        .title {
+          font-weight: 500;
+          font-size: 6.4rem;
+          @media (max-width: 575px) {
+            font-size: 4.8rem;
+          }
+        }
+        .description {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+        }
+        .btn-join {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .card-panel {
+      .card-item {
+        width: 100%;
+        border: 1px solid rgba(2, 24, 37, 0.1);
+        .title {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 150%;
+        }
+        .discription {
+          font-weight: 350;
+          font-size: 18px;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+.thank-you_page {
+	position: relative;
+	z-index: 11;
+	&.thank-you_page-contact {
+		height: 100vh;
+	}
+	.thank-you_header {
+		position: relative;
+		z-index: 5;
+		.top-bar {
+			position: relative;
+			background: #01215c;
+			.r-container {
+				width: 100%;
+				max-width: 1500px;
+				margin: auto;
+			}
+			* {
+				font-size: 1.3rem;
+				color: white;
+			}
+			a:hover {
+				color: white;
+			}
+			.flag-select {
+				* {
+					font-size: 1.6rem;
+				}
+				& #rfs-btn {
+					border: 0;
+					padding: 0;
+					* {
+						font-size: 1.8rem;
+					}
+					&::after {
+						border-top-color: white;
+						margin-left: 0;
+					}
+					&[aria-expanded="true"]::after {
+						border-bottom-color: white;
+					}
+				}
+			}
+		}
+	}
+	.text-panel {
+		position: relative;
+		z-index: 5;
+		width: 42%;
+		.title {
+			font-weight: 400;
+			font-size: 72px;
+			line-height: 100%;
+		}
+		.description {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 150%;
+		}
+		@media (max-width: 1024px) {
+			width: 60%;
+		}
+		@media (max-width: 767px) {
+			width: 75%;
+		}
+		@media (max-width: 616px) {
+			.title {
+				font-size: 5.4rem;
+			}
+			width: 90%;
+		}
+		@media (max-width: 400px) {
+			.title {
+				font-size: 3.8rem;
+			}
+		}
+	}
+	.list-panel {
+		position: relative;
+		z-index: 5;
+		max-width: 768px;
+		width: 95%;
+		background: white;
+		box-shadow: 0 5px 10px rgb(231, 231, 231);
+		.booking-panel {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			color: rgba(2, 24, 37, 0.5);
+		}
+		.experience-panel {
+			h3 {
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 120%;
+			}
+			p {
+				font-size: 1.8rem;
+				font-weight: 400;
+				line-height: 120%;
+				color: rgba(2, 24, 37, 0.7);
+				span {
+					font-family: FreeSerif;
+					font-style: italic;
+					font-size: 2rem;
+				}
+			}
+		}
+		.price-panel {
+			h3 {
+				font-weight: 400;
+				font-size: 1.8rem;
+				line-height: 120%;
+			}
+		}
+	}
+	.list-panel-skeleton {
+		max-width: 768px;
+		width: 95% !important;
+		box-shadow: 0 5px 10px rgb(231, 231, 231);
+	}
+	.btn-panel {
+		position: relative;
+		z-index: 5;
+		.btn {
+			font-size: 1.8rem;
+		}
+		.btn-subscribe {
+			border: 1px solid rgba(2, 24, 37, 0.1);
+			color: rgba(1, 33, 92, 0.7);
+			&:hover {
+				background: rgba(2, 24, 37, 0.7);
+				color: white;
+			}
+		}
+	}
+	.bottom-blue-panel,
+	.bottom-pink-panel {
+		z-index: 1;
+		position: absolute;
+		left: 10%;
+		bottom: 5%;
+		width: 5%;
+		height: 50%;
+		background: #13439b;
+		opacity: 0.7;
+		filter: blur(150px);
+		transform: rotate(-45deg);
+	}
+	.bottom-pink-panel {
+		background: #fad3da;
+		left: 5%;
+	}
+	.top-pink-panel {
+		background: rgba(229, 215, 191, 0.4);
+		filter: blur(500px);
+		width: 40vw;
+		height: 40vw;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}

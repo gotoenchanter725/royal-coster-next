@@ -1,0 +1,58 @@
+.help-section {
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  @media (max-width: 767px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  & > .row {
+    z-index: 2;
+    position: relative;
+  }
+  .title-panel {
+    h2 {
+      font-size: 4.8rem;
+      font-weight: 400;
+      color: #01215c;
+    }
+    p {
+      font-size: 1.8rem;
+      font-weight: 350;
+      color: rgba(1, 33, 92, 0.7);
+    }
+  }
+  .help-items {
+    & > .btn {
+      background: rgba(1, 33, 92, 0.05);
+      font-size: 2rem;
+      border-radius: 1.2rem;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+  }
+  .pink-circle {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 10%;
+    width: 20vw;
+    height: 20vw;
+    background: #fad3da;
+    opacity: 0.7;
+    filter: blur(200px);
+  }
+  .blue-circle {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    transform: translateY(30%);
+    left: 40%;
+    width: 10vw;
+    height: 10vw;
+    background: #13439b;
+    opacity: 0.2;
+    filter: blur(200px);
+  }
+}

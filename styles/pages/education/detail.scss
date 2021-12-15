@@ -1,0 +1,141 @@
+.education-detail_page {
+  .state-section {
+    border-top: 1px solid rgba(2, 24, 37, 0.1);
+    .link-panel {
+      font-size: 1.4rem;
+      color: rgba(0, 0, 0, 0.5);
+      * {
+        font-weight: 500;
+      }
+      a {
+        &:not(.back-arrow) {
+          text-decoration: underline;
+        }
+      }
+      .back-arrow {
+        font-size: 1.6rem;
+      }
+      span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .hero-section {
+    background: rgba(250, 211, 218, 0.5);
+    .r-container {
+      .title {
+        font-size: 4.8rem;
+        font-weight: 400;
+      }
+      .description {
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 150%;
+      }
+      .banner-image {
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .btn-play {
+      position: absolute;
+      bottom: 60px;
+      right: 50px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid white;
+      font-size: 40px;
+      font-weight: lighter;
+      color: #c4c4c4;
+      &:hover {
+        border-color: #b6b6b6;
+        color: #b6b6b6;
+      }
+    }
+    @media (max-width: 767px) {
+      .r-container {
+        .title {
+          width: 80%;
+          font-size: 5.8rem;
+          line-height: 1;
+          span {
+            font-size: 5.8rem;
+            line-height: 98%;
+          }
+        }
+      }
+      .btn-play {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        bottom: 30px;
+        right: 25px;
+      }
+    }
+    @media (max-width: 575px) {
+      .r-container {
+        p {
+          font-size: 1.8rem;
+        }
+        .title {
+          width: 100%;
+          font-size: 3.4rem;
+          span {
+            font-size: 3.4rem;
+          }
+        }
+      }
+      .btn-play {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        bottom: 30px;
+        right: 25px;
+      }
+    }
+  }
+  .detail-section {
+    .btn-panel {
+      border-bottom: 4px solid rgba(2, 24, 37, 0.1);
+      .btn-type {
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(2, 24, 37, 0.5);
+        margin-bottom: -4px;
+        &.active {
+          color: #01215c;
+          font-weight: 500;
+          border-bottom: 4px solid #01215c;
+        }
+      }
+      @media (max-width: 960px) {
+        border-bottom: 0;
+        .btn-type {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .detail-panel {
+      .image-panel {
+        border: 1px solid rgba(2, 24, 37, 0.1);
+        img {
+          width: 100%;
+        }
+      }
+      .detail-title {
+        font-size: 3.6rem;
+        font-weight: 400;
+      }
+      .description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+      }
+    }
+  }
+}

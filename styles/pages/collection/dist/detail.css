@@ -1,0 +1,116 @@
+.collection-detail_page .hero-section {
+  background-size: cover !important;
+  background-position: center !important;
+}
+.collection-detail_page .hero-section .r-container {
+  padding-top: 20rem;
+  padding-bottom: 5rem;
+}
+@media (max-width: 991px) {
+  .collection-detail_page .hero-section .r-container {
+    padding-top: 15rem;
+  }
+}
+.collection-detail_page .hero-section .r-container .title {
+  font-size: 7.2rem;
+  font-weight: 400;
+  line-height: 102%;
+  width: 40%;
+}
+.collection-detail_page .hero-section .r-container .title > span {
+  font-family: FreeSerif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 7.6rem;
+}
+@media (max-width: 767px) {
+  .collection-detail_page .hero-section .r-container {
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+  }
+  .collection-detail_page .hero-section .r-container .title {
+    width: 80%;
+    font-size: 5.8rem;
+    line-height: 1;
+  }
+  .collection-detail_page .hero-section .r-container .title span {
+    font-size: 5.8rem;
+    line-height: 98%;
+  }
+}
+@media (max-width: 575px) {
+  .collection-detail_page .hero-section .r-container p {
+    font-size: 1.8rem;
+  }
+  .collection-detail_page .hero-section .r-container .title {
+    width: 100%;
+    font-size: 3.4rem;
+  }
+  .collection-detail_page .hero-section .r-container .title span {
+    font-size: 3.4rem;
+  }
+}
+.collection-detail_page .guide-section {
+  background: #f7f3ec;
+}
+.collection-detail_page .guide-section .title {
+  font-size: 4.8rem;
+  font-weight: 400;
+  color: #01215c;
+}
+.collection-detail_page .guide-section .title span {
+  font-style: italic;
+  font-family: FreeSerif;
+}
+.collection-detail_page .guide-section .guide-text {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 400;
+  color: rgba(2, 24, 37, 0.8);
+}
+.collection-detail_page .guide-section .guide-text > * {
+  text-align: left !important;
+}
+@media (max-width: 575px) {
+  .collection-detail_page .guide-section .title {
+    width: 100%;
+    font-size: 3.6rem;
+  }
+  .collection-detail_page .guide-section .guide-text {
+    font-size: 1.8rem;
+  }
+}
+.collection-detail_page .product-section .product-type-panel .btn {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  color: rgba(1, 33, 92, 0.5);
+}
+.collection-detail_page .product-section .product-type-panel .btn.active {
+  color: #01215c;
+}
+.collection-detail_page .product-section .product-panel .image-panel img {
+  width: 100%;
+}
+.collection-detail_page .product-section .product-panel .title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: rgba(2, 24, 37, 0.7);
+}
+.collection-detail_page .product-section .product-panel .price {
+  font-family: FreeSerif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+}
+.collection-detail_page .product-section .product-panel .empty-text {
+  font-size: 3.6rem;
+  font-weight: 400;
+  color: rgba(2, 24, 37, 0.8);
+}
+.collection-detail_page .collection-section {
+  background: rgba(247, 243, 236, 0.5);
+}

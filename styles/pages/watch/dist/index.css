@@ -1,0 +1,78 @@
+.watch_page .hero-section {
+  margin-top: 4rem;
+  background: linear-gradient(180deg, #01215c 5.93%, rgba(1, 33, 92, 0) 41.15%), url(/img/watch/main-page_banner-bg.jpg);
+  background-size: cover;
+}
+.watch_page .hero-section .r-container {
+  padding-top: 40rem;
+  padding-bottom: 15rem;
+}
+@media (max-width: 991px) {
+  .watch_page .hero-section .r-container {
+    padding-top: 20rem;
+  }
+}
+.watch_page .hero-section .r-container p {
+  font-size: 2.4rem;
+  color: white;
+}
+.watch_page .hero-section .r-container .title {
+  font-size: 7.2rem;
+  font-weight: 400;
+  color: white;
+}
+.watch_page .hero-section .r-container .title > span {
+  font-family: FreeSerif;
+  font-weight: 400;
+  font-size: 7.6rem;
+  line-height: 120%;
+}
+@media (max-width: 767px) {
+  .watch_page .hero-section {
+    margin-top: 11rem;
+  }
+  .watch_page .hero-section .r-container {
+    padding-top: 11rem;
+    padding-bottom: 3rem;
+  }
+  .watch_page .hero-section .r-container .title {
+    width: 80%;
+    font-size: 5.8rem;
+    line-height: 1;
+  }
+  .watch_page .hero-section .r-container .title span {
+    font-size: 5.8rem;
+    line-height: 98%;
+  }
+}
+@media (max-width: 575px) {
+  .watch_page .hero-section .r-container .title {
+    font-size: 4.2rem;
+  }
+  .watch_page .hero-section .r-container .title span {
+    font-size: 4.2rem;
+  }
+}
+.watch_page .guide-section {
+  background: #f7f3ec;
+}
+.watch_page .guide-section .title {
+  font-size: 4.8rem;
+  font-weight: 400;
+  color: #01215c;
+}
+.watch_page .guide-section .guide-text {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 400;
+  color: rgba(2, 24, 37, 0.8);
+}
+@media (max-width: 575px) {
+  .watch_page .guide-section .title {
+    width: 80%;
+    font-size: 3.6rem;
+  }
+  .watch_page .guide-section .guide-text {
+    font-size: 1.8rem;
+  }
+}

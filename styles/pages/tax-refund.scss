@@ -1,0 +1,267 @@
+.tax-refund_page {
+  .hero-section {
+    background: linear-gradient(0deg, #01215c 0%, rgba(1, 33, 92, 0) 100%), url(/img/taxRefund/banner_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    .r-container {
+      padding-top: 20rem;
+      padding-bottom: 5rem;
+      @media (max-width: 991px) {
+        padding-top: 15rem;
+      }
+      p {
+        font-size: 2.4rem;
+        color: white;
+      }
+      .title {
+        font-size: 7.2rem;
+        font-weight: 400;
+        line-height: 102%;
+        color: white;
+        & > span {
+          font-family: FreeSerif;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 7.6rem;
+        }
+      }
+      .description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    @media (max-width: 767px) {
+      .r-container {
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        .title {
+          width: 80%;
+          font-size: 5.8rem;
+          line-height: 1;
+          span {
+            font-size: 5.8rem;
+            line-height: 98%;
+          }
+        }
+      }
+    }
+    @media (max-width: 575px) {
+      .r-container {
+        p {
+          font-size: 1.8rem;
+        }
+        .title {
+          width: 100%;
+          font-size: 3.4rem;
+          span {
+            font-size: 3.4rem;
+          }
+        }
+      }
+    }
+  }
+  .guide-section {
+    background: #f7f3ec;
+    .title {
+      font-size: 4.8rem;
+      font-weight: 400;
+      color: #01215c;
+      span {
+        font-family: FreeSerif;
+        font-style: italic;
+      }
+    }
+    .guide-text {
+      font-size: 24px;
+      line-height: 150%;
+      font-weight: 400;
+      color: rgba(2, 24, 37, 0.8);
+    }
+    @media (max-width: 575px) {
+      .title {
+        width: 100%;
+        font-size: 3.6rem;
+      }
+      .guide-text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .form-section {
+    .title {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 150%;
+    }
+    input,
+    textarea {
+      background: #f6f6f6;
+      border: 1px solid rgba(2, 24, 37, 0.1);
+      font-weight: 350;
+      font-size: 16px;
+      line-height: 150%;
+      resize: none;
+      &:focus {
+        box-shadow: none;
+        border-color: #01215c;
+      }
+    }
+    button {
+      width: 100%;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+  .refund-step-section {
+    background: #f6f6f6;
+    .step-title {
+      .title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 110%;
+        span {
+          font-family: FreeSelf;
+          font-style: italic;
+        }
+      }
+    }
+    .step-panel {
+      .step {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 110%;
+        color: rgba(2, 24, 37, 0.5);
+      }
+      .title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 110%;
+      }
+      .description,
+      .answer {
+        font-weight: 350;
+        font-size: 16px;
+        line-height: 150%;
+        color: rgba(2, 24, 37, 0.7);
+      }
+      .question {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 150%;
+        color: #021825;
+      }
+    }
+  }
+  .booking-section {
+    .booking-panel {
+      .booking-list-panel {
+        border: 1px solid rgba(2, 24, 37, 0.1);
+        .title-panel {
+          .title {
+            font-size: 3.6rem;
+            font-weight: 400;
+            @media (max-width: 767px) {
+              font-size: 2.8rem;
+            }
+          }
+          .status {
+            background: rgba(240, 0, 54, 0.1);
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+            color: #a20024;
+            border-radius: 20px;
+          }
+        }
+        .booking-list {
+          font-size: 1.8rem;
+          font-weight: 400;
+        }
+      }
+      .direction-panel {
+        border: 1px solid rgba(2, 24, 37, 0.1);
+        height: 100%;
+        .title-panel {
+          .title {
+            font-size: 3.6rem;
+            font-weight: 400;
+            @media (max-width: 767px) {
+              font-size: 2.8rem;
+            }
+          }
+          .status {
+            color: #01215c;
+            background: rgba(1, 33, 92, 0.05);
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+  .more-tour-section {
+    .title-panel {
+      background: #f7f3ec;
+      .title {
+        font-weight: normal;
+        font-size: 4.8rem;
+        line-height: 102%;
+        span {
+          font-family: FreeSerif;
+          font-size: 5.2rem;
+          font-style: italic;
+        }
+      }
+    }
+    .tours-panel {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        background: #f7f3ec;
+        height: 100px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .r-container {
+        position: relative;
+        z-index: 2;
+        .image-panel {
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+        }
+        .title {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 130%;
+        }
+        .description {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+          color: rgba(2, 24, 37, 0.7);
+        }
+        .more-detail {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 18px;
+          * {
+            font-size: 1.8rem;
+          }
+        }
+      }
+      .btn-more {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

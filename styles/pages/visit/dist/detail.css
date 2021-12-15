@@ -1,0 +1,490 @@
+.tour-detail_page .hero-section {
+  position: relative;
+  background: url(/img/tour/detail_bg.png);
+  background-size: cover;
+  background-position: center;
+}
+.tour-detail_page .hero-section .r-container {
+  padding-top: 20rem;
+  padding-bottom: 5rem;
+}
+@media (max-width: 991px) {
+  .tour-detail_page .hero-section .r-container {
+    padding-top: 10rem;
+  }
+}
+.tour-detail_page .hero-section .r-container p {
+  font-size: 2.4rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.tour-detail_page .hero-section .r-container .title {
+  font-size: 7.2rem;
+  font-weight: 400;
+  line-height: 102%;
+  color: white;
+}
+.tour-detail_page .hero-section .r-container .title > span {
+  font-family: FreeSerif;
+  font-weight: 400;
+  font-size: 7.6rem;
+}
+.tour-detail_page .hero-section .r-container .description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.7);
+}
+.tour-detail_page .hero-section .btn-play {
+  position: absolute;
+  bottom: 60px;
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+  font-size: 40px;
+  font-weight: lighter;
+  color: #c4c4c4;
+}
+.tour-detail_page .hero-section .btn-play:hover {
+  border-color: #b6b6b6;
+  color: #b6b6b6;
+}
+@media (max-width: 767px) {
+  .tour-detail_page .hero-section .r-container {
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+  }
+  .tour-detail_page .hero-section .r-container .title {
+    width: 80%;
+    font-size: 5.8rem;
+    line-height: 1;
+  }
+  .tour-detail_page .hero-section .r-container .title span {
+    font-size: 5.8rem;
+    line-height: 98%;
+  }
+  .tour-detail_page .hero-section .btn-play {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    bottom: 30px;
+    right: 25px;
+  }
+}
+@media (max-width: 575px) {
+  .tour-detail_page .hero-section .r-container p {
+    font-size: 1.8rem;
+  }
+  .tour-detail_page .hero-section .r-container .title {
+    width: 100%;
+    font-size: 3.4rem;
+  }
+  .tour-detail_page .hero-section .r-container .title span {
+    font-size: 3.4rem;
+  }
+  .tour-detail_page .hero-section .btn-play {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    bottom: 30px;
+    right: 25px;
+  }
+}
+.tour-detail_page .guide-section {
+  background: #f7f3ec;
+}
+.tour-detail_page .guide-section .title {
+  font-size: 4.8rem;
+  font-weight: 400;
+  color: #01215c;
+}
+.tour-detail_page .guide-section .title > span {
+  font-family: FreeSerif;
+  font-weight: 400;
+  font-size: 5.2rem;
+}
+.tour-detail_page .guide-section .guide-text,
+.tour-detail_page .guide-section .description-cost {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 400;
+  color: rgba(2, 24, 37, 0.8);
+}
+.tour-detail_page .guide-section .description-cost {
+  font-weight: 500;
+}
+@media (max-width: 575px) {
+  .tour-detail_page .guide-section .title {
+    width: 100%;
+    font-size: 3.6rem;
+  }
+  .tour-detail_page .guide-section .guide-text {
+    font-size: 1.8rem;
+  }
+}
+.tour-detail_page .banner-section {
+  position: relative;
+}
+.tour-detail_page .banner-section::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 250px;
+  width: 100%;
+  background: #f7f3ec;
+  z-index: 1;
+}
+.tour-detail_page .banner-section .cover-image-panel {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.tour-detail_page .banner-section .cover-image-panel img {
+  width: 100%;
+}
+.tour-detail_page .banner-section .cover-image-panel .btn-play {
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #c4c4c4;
+}
+.tour-detail_page .banner-section .cover-image-panel .btn-play:hover {
+  color: #b6b6b6;
+}
+@media (max-width: 575px) {
+  .tour-detail_page .banner-section .cover-image-panel .btn-play {
+    font-size: 50px;
+  }
+}
+.tour-detail_page .banner-section .slider-panel {
+  position: relative;
+  z-index: 2;
+}
+.tour-detail_page .banner-section .slider-panel .image-panel {
+  overflow: hidden;
+}
+.tour-detail_page .banner-section .slider-panel .image-panel img {
+  width: 100%;
+}
+.tour-detail_page .overview-section .title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+}
+.tour-detail_page .overview-section .description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+.tour-detail_page .overview-section .book-date {
+  border: 1px solid rgba(2, 24, 37, 0.1);
+}
+.tour-detail_page .overview-section .book-date .react-calendar {
+  border: 0;
+  width: 100%;
+}
+.tour-detail_page .overview-section .book-date .react-calendar * {
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.tour-detail_page .overview-section .book-date .react-calendar abbr[title] {
+  text-decoration: none;
+  font-weight: 500;
+}
+.tour-detail_page .overview-section .book-date .react-calendar .react-calendar__navigation {
+  border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+}
+.tour-detail_page .overview-section .book-date .react-calendar button.react-calendar__tile {
+  overflow: unset !important;
+  position: relative;
+  margin-top: 20px;
+}
+.tour-detail_page .overview-section .book-date .react-calendar button.react-calendar__tile.react-calendar__tile--now {
+  background: transparent;
+}
+.tour-detail_page .overview-section .book-date .react-calendar button.react-calendar__tile.react-calendar__tile--now:hover {
+  background: #e6e6e6;
+}
+.tour-detail_page .overview-section .book-date .react-calendar button.react-calendar__tile.react-calendar__tile--active {
+  background: #f2f3f4;
+}
+.tour-detail_page .overview-section .book-date .react-calendar button.react-calendar__tile.react-calendar__month-view__days__day abbr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition-duration: 0.5s;
+}
+.tour-detail_page .overview-section .book-date .react-calendar button.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__tile--now {
+  background: transparent;
+}
+.tour-detail_page .overview-section .book-date .react-calendar button.react-calendar__tile.react-calendar__month-view__days__day:hover {
+  background: transparent;
+}
+.tour-detail_page .overview-section .book-date .react-calendar button.react-calendar__tile.react-calendar__month-view__days__day:hover abbr {
+  transition-duration: 0.7s;
+  border-radius: 50px;
+  background: gainsboro;
+  background: gainsboro;
+  color: #01215c;
+  font-weight: 500;
+}
+.tour-detail_page .overview-section .book-date .react-calendar button.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__tile--active {
+  background: transparent;
+}
+.tour-detail_page .overview-section .book-date .react-calendar button.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__tile--active abbr {
+  background: #18724c;
+  color: #ffffff;
+  font-weight: 500;
+}
+.tour-detail_page .overview-section .book-date .react-calendar .react-calendar__navigation button {
+  font-size: 2.5rem;
+}
+.tour-detail_page .overview-section .book-date .react-calendar .react-calendar__navigation button:hover, .tour-detail_page .overview-section .book-date .react-calendar .react-calendar__navigation button:focus {
+  background: transparent;
+}
+.tour-detail_page .overview-section .book-date .react-calendar .react-calendar__navigation button[disabled] {
+  background: transparent;
+}
+@media (max-width: 450px) {
+  .tour-detail_page .overview-section .book-date .react-calendar {
+    padding: 10px;
+  }
+  .tour-detail_page .overview-section .book-date .react-calendar * {
+    font-size: 1.4rem;
+  }
+}
+.tour-detail_page .overview-section .book-date * {
+  font-size: 1.4rem;
+}
+@media (max-width: 767px) {
+  .tour-detail_page .overview-section .book-date * {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .tour-detail_page .overview-section .book-date * {
+    font-size: 1.4rem;
+  }
+}
+.tour-detail_page .overview-section .book-date .title-panel .title {
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 120%;
+}
+@media (max-width: 767px) {
+  .tour-detail_page .overview-section .book-date .title-panel .title {
+    font-size: 2.8rem;
+  }
+}
+.tour-detail_page .overview-section .book-date .title-panel .status {
+  background: rgba(24, 114, 76, 0.2);
+  border-radius: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #18724c;
+}
+.tour-detail_page .overview-section .book-date .rdrCalendarWrapper {
+  width: 100%;
+}
+.tour-detail_page .overview-section .book-date .rdrCalendarWrapper .rdrDateDisplayWrapper {
+  display: none;
+}
+.tour-detail_page .overview-section .book-date .rdrCalendarWrapper .rdrMonthAndYearWrapper {
+  border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+}
+.tour-detail_page .overview-section .book-date .rdrCalendarWrapper .rdrMonthsVertical .rdrMonth {
+  width: 100%;
+}
+.tour-detail_page .overview-section .book-date .rdrCalendarWrapper .rdrMonthsVertical .rdrMonth .rdrDay {
+  height: 3.2em;
+}
+.tour-detail_page .overview-section .btn-available {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #18724c;
+}
+.tour-detail_page .booking-section .ticket-panel {
+  border: 1px solid rgba(2, 24, 37, 0.1);
+}
+.tour-detail_page .booking-section .ticket-panel p {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+@media (max-width: 1024px) {
+  .tour-detail_page .booking-section .ticket-panel p {
+    font-size: 1.8rem;
+  }
+}
+.tour-detail_page .booking-section .ticket-panel .btn-ticket {
+  font-size: 1.8rem;
+}
+@media (max-width: 1024px) {
+  .tour-detail_page .booking-section .ticket-panel .btn-ticket {
+    font-size: 1.4rem;
+  }
+}
+.tour-detail_page .booking-section .booking-panel .booking-list-panel {
+  border: 1px solid rgba(2, 24, 37, 0.1);
+}
+.tour-detail_page .booking-section .booking-panel .booking-list-panel .title-panel .title {
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .tour-detail_page .booking-section .booking-panel .booking-list-panel .title-panel .title {
+    font-size: 2.8rem;
+  }
+}
+.tour-detail_page .booking-section .booking-panel .booking-list-panel .title-panel .status {
+  background: rgba(240, 0, 54, 0.1);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #a20024;
+  border-radius: 20px;
+}
+.tour-detail_page .booking-section .booking-panel .booking-list-panel .booking-list {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.tour-detail_page .booking-section .booking-panel .direction-panel {
+  border: 1px solid rgba(2, 24, 37, 0.1);
+  height: 100%;
+}
+.tour-detail_page .booking-section .booking-panel .direction-panel .title-panel .title {
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .tour-detail_page .booking-section .booking-panel .direction-panel .title-panel .title {
+    font-size: 2.8rem;
+  }
+}
+.tour-detail_page .booking-section .booking-panel .direction-panel .title-panel .status {
+  color: #01215c;
+  background: rgba(1, 33, 92, 0.05);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  border-radius: 20px;
+}
+.tour-detail_page .description-section .main-panel .image-panel {
+  position: relative;
+  overflow: hidden;
+}
+.tour-detail_page .description-section .main-panel .image-panel img {
+  width: 100%;
+}
+.tour-detail_page .description-section .main-panel .image-panel .cost-box {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  background: #fad3da;
+}
+.tour-detail_page .description-section .main-panel .image-panel .cost-box * {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 15px;
+}
+.tour-detail_page .description-section .main-panel .text-panel .title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+}
+@media (max-width: 767px) {
+  .tour-detail_page .description-section .main-panel .text-panel .title {
+    font-size: 3.4rem;
+  }
+}
+.tour-detail_page .description-section .main-panel .text-panel p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(2, 24, 37, 0.8);
+}
+.tour-detail_page .description-section .sub-panel img {
+  width: 100%;
+}
+.tour-detail_page .description-section .sub-panel .title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+.tour-detail_page .description-section .sub-panel p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(2, 24, 37, 0.8);
+}
+.tour-detail_page .description-section .btn-read-more {
+  font-size: 1.8rem;
+}
+.tour-detail_page .more-tour-section .title-panel {
+  background: #f7f3ec;
+}
+.tour-detail_page .more-tour-section .title-panel .title {
+  font-weight: normal;
+  font-size: 4.8rem;
+  line-height: 102%;
+}
+.tour-detail_page .more-tour-section .title-panel .title span {
+  font-family: FreeSerif;
+  font-size: 5.2rem;
+}
+.tour-detail_page .more-tour-section .tours-panel {
+  position: relative;
+}
+.tour-detail_page .more-tour-section .tours-panel:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background: #f7f3ec;
+  height: 100px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.tour-detail_page .more-tour-section .tours-panel .r-container {
+  position: relative;
+  z-index: 2;
+}
+.tour-detail_page .more-tour-section .tours-panel .r-container .image-panel {
+  overflow: hidden;
+}
+.tour-detail_page .more-tour-section .tours-panel .r-container .image-panel img {
+  width: 100%;
+}
+.tour-detail_page .more-tour-section .tours-panel .r-container .title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+}
+.tour-detail_page .more-tour-section .tours-panel .r-container .description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(2, 24, 37, 0.7);
+}
+.tour-detail_page .more-tour-section .tours-panel .r-container .more-detail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+.tour-detail_page .more-tour-section .tours-panel .r-container .more-detail * {
+  font-size: 1.8rem;
+}

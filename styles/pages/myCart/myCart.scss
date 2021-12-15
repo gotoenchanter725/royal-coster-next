@@ -1,0 +1,237 @@
+.myCart_page {
+  .link-section {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(2, 24, 37, 0.1);
+    border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+    * {
+      font-weight: 500;
+    }
+    a {
+      &:not(.back-arrow) {
+        text-decoration: underline;
+      }
+    }
+    .back-arrow {
+      font-size: 1.6rem;
+    }
+    span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .my-cart-section {
+    .title-panel {
+      border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+      .title {
+        font-size: 3.6rem;
+        font-weight: 350;
+      }
+      p {
+        font-size: 1.6rem;
+        color: rgba(2, 24, 37, 0.7);
+        font-weight: 400;
+      }
+    }
+    .cart-panel {
+      .cart-info {
+        border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+        .amount-panel {
+          button {
+            font-size: 2.4rem;
+            border: 1px solid rgba(2, 24, 37, 0.1);
+            width: 40px;
+            height: 40px;
+            &:focus {
+              box-shadow: none;
+            }
+            &:hover {
+              background: rgba(2, 24, 37, 0.1);
+            }
+            @media (max-width: 767px) {
+              width: 30px;
+              height: 30px;
+              font-size: 1.8rem;
+            }
+          }
+          span {
+            font-size: 2.4rem;
+          }
+        }
+        .btn-detail {
+          font-size: 1.6rem;
+          font-weight: 500;
+          * {
+            font-size: 2.2rem;
+          }
+        }
+        .link-panel {
+          .remove-btn-panel {
+            width: 100px;
+          }
+          .btn-remove {
+            color: rgba(2, 24, 37, 0.5);
+            font-size: 1.6rem;
+            font-weight: 500;
+            * {
+              font-size: 2rem;
+            }
+          }
+          .btn-more-detail {
+            color: #021825;
+            font-size: 1.6rem;
+            font-weight: 500;
+          }
+          .btn-remove {
+            color: rgba(2, 24, 37, 0.5);
+            font-size: 1.6rem;
+            font-weight: 500;
+          }
+        }
+        .image-panel {
+          img {
+            border: 1px solid rgba(2, 24, 37, 0.1);
+            @media (max-width: 767px) {
+              width: 100px;
+              height: 100px;
+            }
+          }
+        }
+        .info-panel {
+          flex: 1;
+          .info_text-panel {
+            .text-panel {
+              .title {
+                font-size: 2.4rem;
+                font-weight: 400;
+              }
+              .cart-style {
+                font-size: 1.4rem;
+                font-weight: 400;
+              }
+              .cart-description {
+                width: 70%;
+                font-size: 1.4rem;
+                font-weight: 400;
+                @media (max-width: 1280px) {
+                  width: 100%;
+                }
+              }
+            }
+            .cart-price {
+              * {
+                font-family: FreeSerif;
+                font-style: italic;
+                font-size: 2.4rem;
+                color: #01215c;
+              }
+            }
+          }
+        }
+      }
+      .none-text {
+        font-size: 3.6rem;
+        font-weight: 400;
+        color: #041b29be;
+        border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+      }
+    }
+  }
+  .total-section {
+    .left-panel {
+      .need-help-panel {
+        border: 1px solid rgba(2, 24, 37, 0.1);
+        .title-panel {
+          border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+          h3 {
+            font-size: 1.6rem;
+            font-weight: 400;
+          }
+          .link-panel {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #01215c;
+          }
+        }
+        .purchase-panel {
+          h3 {
+            font-size: 1.6rem;
+            font-weight: 400;
+          }
+          button {
+            background: #fad3da;
+            border-radius: 0.6rem;
+            font-weight: 400;
+            font-size: 1.4rem;
+            border: 1px solid transparent;
+            &:hover {
+              border-color: #01215c;
+              background: transparent;
+            }
+          }
+        }
+      }
+      .instruction-panel {
+        border: 1px solid rgba(2, 24, 37, 0.1);
+        h3 {
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+        textarea {
+          font-size: 1.6rem;
+          background: #f6f6f6;
+          resize: none;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    .summary-panel {
+      background: #f6f6f6;
+      .title {
+        font-size: 2.4rem;
+        font-weight: 500;
+        border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+      }
+      .price-panel {
+        border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+        h3,
+        p {
+          font-size: 1.8rem;
+          font-weight: 400;
+        }
+      }
+      .total-panel {
+        h3,
+        p {
+          font-size: 1.8rem;
+          font-weight: 400;
+        }
+        .total-price {
+          h3,
+          p {
+            font-weight: 500;
+          }
+        }
+        .paid-price {
+          border: 1px solid rgba(2, 24, 37, 0.1);
+          p {
+            font-family: FreeSerif;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 31px;
+            color: #021825;
+          }
+        }
+        .btn {
+          width: 100%;
+          font-size: 1.8rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

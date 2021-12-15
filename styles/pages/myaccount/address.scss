@@ -1,0 +1,56 @@
+.address_panel {
+	.title-panel {
+		h3 {
+			font-family: FreeSerif;
+			font-style: italic;
+			font-weight: 400;
+			font-size: 36px;
+			color: #021825;
+		}
+		.btn-creat {
+			border: 1px solid #fad3da;
+			border-radius: 7px;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 15px;
+			color: #01215c;
+			padding: 10px 18px;
+			&:hover {
+				background: #fad3da;
+			}
+		}
+		border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+		padding-bottom: 18px;
+		margin-bottom: 24px;
+	}
+	input {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 17px;
+		letter-spacing: 0.05em;
+		color: rgba(1, 33, 92, 0.5);
+		border: 1px solid rgba(1, 33, 92, 0.1);
+		border-radius: 9px;
+		&:focus {
+			border-color: #01215c;
+			box-shadow: none;
+		}
+	}
+	.form-control {
+		margin-bottom: 16px;
+	}
+	.btn-apply {
+		padding: 16px 24px;
+		margin-top: 33px;
+		border-radius: 9px;
+		width: 100%;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 17px;
+	}
+	.btn-remove {
+		color: rgba(1, 33, 92, 0.5);
+		font-size: 1.8rem;
+		font-weight: 300;
+	}
+}

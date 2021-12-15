@@ -1,0 +1,82 @@
+$titleSize: 7.2rem;
+
+.help {
+  background: #f2ebdf;
+  padding-top: 10rem;
+  & .row {
+    background: url(/img/homepage/help_bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: 50%;
+    // background-position: 0 -20%;
+    @media (max-width: 1024px) {
+      background-size: 80%;
+    }
+
+    @media (max-width: 960px) {
+      background-size: 100%;
+    }
+  }
+  & .text-panel {
+    h2 {
+      font-size: $titleSize;
+      @media (max-width: 425px) {
+        font-size: 5rem;
+      }
+      span {
+        font-family: FreeSerif;
+        font-style: italic;
+      }
+    }
+    p {
+      font-size: 2.4rem;
+      padding-bottom: 5rem;
+    }
+  }
+  & .service_panel {
+    margin-bottom: 8rem;
+    width: 100%;
+    background: white;
+    h3 {
+      font-size: 3.6rem;
+    }
+    p {
+      width: 80%;
+      font-size: 1.8rem;
+      @media (max-width: 540px) {
+        width: 100%;
+      }
+    }
+    a {
+      display: block;
+      width: 100%;
+      font-size: 1.8rem;
+    }
+    .design-service {
+      &:hover {
+        color: #01215c;
+      }
+    }
+    @media (max-width: 450px) {
+      h3 {
+        font-size: 3rem;
+      }
+      .upgrade-diamond {
+        padding: 10px 20px !important;
+        img {
+          display: none;
+        }
+        p {
+          text-align: center;
+          font-size: 1.4rem;
+        }
+      }
+      .design-service {
+        padding: 10px 20px !important;
+        text-align: center;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

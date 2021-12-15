@@ -1,0 +1,155 @@
+.internships_page {
+  .hero-section {
+    background: linear-gradient(0deg, #01215c 0%, rgba(1, 33, 92, 0) 72.4%), url(/img/whyRoyalCoster/banner_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    .r-container {
+      padding-top: 20rem;
+      padding-bottom: 5rem;
+      @media (max-width: 991px) {
+        padding-top: 15rem;
+      }
+      p {
+        font-size: 2.4rem;
+        color: white;
+      }
+      .title {
+        font-size: 7.2rem;
+        line-height: 102%;
+        font-weight: 400;
+        color: white;
+        & > span {
+          font-family: FreeSerif;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 7.6rem;
+        }
+      }
+      .description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    @media (max-width: 767px) {
+      .r-container {
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        .title {
+          width: 80%;
+          font-size: 5.8rem;
+          line-height: 1;
+          span {
+            font-size: 5.8rem;
+            line-height: 98%;
+          }
+        }
+      }
+    }
+    @media (max-width: 575px) {
+      .r-container {
+        p {
+          font-size: 1.8rem;
+        }
+        .title {
+          width: 100%;
+          font-size: 3.4rem;
+          span {
+            font-size: 3.4rem;
+          }
+        }
+      }
+    }
+  }
+  .guide-section {
+    background: #f7f3ec;
+    .title {
+      font-size: 4.8rem;
+      font-weight: 400;
+      color: #01215c;
+    }
+    .guide-text {
+      font-size: 24px;
+      line-height: 150%;
+      font-weight: 400;
+      color: rgba(2, 24, 37, 0.8);
+    }
+    @media (max-width: 575px) {
+      .title {
+        width: 100%;
+        font-size: 3.6rem;
+      }
+      .guide-text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .hire-section {
+    .title {
+      font-family: FreeSerif;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 62px;
+    }
+    .form-panel {
+      background: white;
+      box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      * {
+        font-size: 1.8rem;
+      }
+      .form-control {
+        border: 0;
+        box-shadow: 0;
+        &.keyword-input {
+          border-right: 1px solid rgba(0, 0, 0, 0.1);
+        }
+      }
+      @media (max-width: 767px) {
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        .form-control {
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          &.keyword-input {
+          }
+          &:focus {
+            border-color: #01215c;
+          }
+        }
+      }
+    }
+    .setting-panel {
+      background: #f6f6f6;
+      .setting-title {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 41px;
+        @media (max-width: 767px) {
+          font-size: 2.4rem;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 23px;
+        color: rgba(2, 24, 37, 0.5);
+        @media (max-width: 767px) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .btn-apply {
+      border: 1px solid #01215C;
+      font-size: 1.6rem;
+      background: white;
+      font-weight: 400;
+      &:hover {
+        color: white;
+        background: #01215c;
+      }
+    }
+  }
+}

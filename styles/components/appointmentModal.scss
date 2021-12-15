@@ -1,0 +1,309 @@
+#appointmentModal {
+  max-width: 1024px !important;
+  .modal-content {
+    box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.05);
+    .modal-title {
+      font-size: 2.4rem;
+      color: #01215c;
+      font-weight: 500;
+    }
+    #v-pills-tab {
+      button {
+        border: 1px solid rgba(2, 24, 37, 0.1);
+        border-radius: 0.8rem;
+        font-size: 1.8rem;
+        color: rgba(2, 24, 37, 0.5);
+        font-weight: 500;
+        &.active {
+          background: transparent;
+          border-color: #01215c;
+          color: #01215c;
+        }
+        // &:disabled {
+        //   background: #c9c9c9;
+        //   border: #c9c9c9;
+        //   color: white;
+        // }
+      }
+    }
+    .tab-content {
+      * {
+        color: black;
+      }
+      #location {
+        .title {
+          font-size: 2.4rem;
+          font-weight: 400;
+        }
+        .description {
+          font-weight: 400;
+          font-size: 1.8rem;
+        }
+        .btn-unavailable {
+          width: 100%;
+          font-weight: 400;
+          font-size: 1.8rem;
+        }
+        .btn-consultation {
+          width: 100%;
+          * {
+            font-weight: 400;
+            font-size: 1.8rem;
+            color: white;
+          }
+          &:hover {
+            * {
+              color: #01215c;
+            }
+          }
+        }
+      }
+      #service {
+        .title {
+          font-size: 2.4rem;
+          font-weight: 400;
+        }
+        .option-item {
+          background: #f2f3f4;
+          font-size: 1.8rem;
+          font-weight: 400;
+          border: 2px solid transparent;
+          cursor: pointer;
+          &.active {
+            border-color: #01215c;
+            color: #01215c;
+            font-weight: 500;
+          }
+        }
+      }
+      #contactDetails {
+        .title {
+          font-size: 2.4rem;
+          color: #01215c;
+          font-weight: 400;
+        }
+        label {
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: #01215c;
+        }
+        .form-control,
+        .form-select {
+          color: black;
+          font-weight: 500;
+          font-size: 1.4rem;
+          &:focus {
+            box-shadow: none;
+            border-color: #01215c;
+          }
+        }
+        .telephone-form {
+          .phoneNumber-prefix {
+            width: 100px;
+            position: relative;
+            * {
+              font-size: 1.4rem;
+              font-weight: 500;
+              color: #01215c;
+            }
+            .symbol {
+              position: absolute;
+              left: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+          #phoneNumber {
+            flex: 1;
+          }
+        }
+        .safe-panel {
+          h3 {
+            font-size: 1.4rem;
+            color: rgba(1, 33, 92, 0.5);
+            font-weight: 500;
+          }
+          label {
+            flex: 1;
+            font-size: 1.4rem;
+            color: black;
+            font-weight: 400;
+          }
+          #safeMode {
+            width: 2.4rem;
+            height: 2.4rem;
+            &:focus {
+              box-shadow: none;
+            }
+            &:checked {
+              background-color: #01215c;
+              border-color: #01215c;
+            }
+          }
+        }
+        .btn-request {
+          font-size: 1.6rem;
+          color: #01215c;
+          font-weight: 500;
+          &:hover {
+            border-color: #01215c;
+          }
+        }
+      }
+      #timeDate {
+        .title {
+          font-size: 2.4rem;
+          color: #01215c;
+        }
+        .date-panel {
+          .calendar-panel {
+            border: 1px solid rgba(2, 24, 37, 0.3);
+            overflow: hidden;
+            .date-title-panel {
+              cursor: pointer;
+              * {
+                font-size: 2rem;
+                color: #01215c;
+                font-weight: 500;
+              }
+              span {
+                font-size: 1.4rem;
+              }
+            }
+            .react-calendar {
+              border: 0;
+              width: 100%;
+              display: none;
+              border-top: 1px solid rgba(2, 24, 37, 0.3);
+              padding: 25px;
+              * {
+                font-size: 1.8rem;
+                font-weight: 400;
+              }
+              abbr[title] {
+                text-decoration: none;
+                font-weight: 500;
+              }
+              button {
+                &.react-calendar__tile {
+                  overflow: unset !important;
+                  position: relative;
+                  margin-top: 20px;
+                  background: transparent;
+
+                  &.react-calendar__tile--now {
+                    background: transparent;
+                    &:hover {
+                      background: #e6e6e6;
+                    }
+                  }
+
+                  &.react-calendar__tile--active {
+                    background: #f2f3f4;
+                  }
+                  &.react-calendar__month-view__days__day {
+                    abbr {
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      width: 43px;
+                      height: 43px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      border-radius: 50px;
+                      transition-duration: 0.5s;
+                    }
+                    &.react-calendar__tile--now {
+                      background: transparent;
+                    }
+                    &.react-calendar__tile--active {
+                      background: transparent;
+                      abbr {
+                        background: gainsboro;
+                        color: #01215c;
+                        font-weight: 500;
+                      }
+                    }
+                    &:hover {
+                      background: transparent;
+                      abbr {
+                        transition-duration: 0.7s;
+                        border-radius: 50px;
+                        background: gainsboro;
+                      }
+                    }
+                    &:hover {
+                      background: transparent;
+                    }
+                  }
+                }
+              }
+              .react-calendar__navigation {
+                button {
+                  font-size: 2.5rem;
+                  &:hover,
+                  &:focus {
+                    background: transparent;
+                  }
+                  &[disabled] {
+                    background: transparent;
+                  }
+                }
+              }
+
+              @media (max-width: 450px) {
+                padding: 10px;
+                * {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+          }
+
+          // &.active {
+          //   .react-calendar {
+          //     display: block;
+          //   }
+          // }
+        }
+        .time-panel {
+          display: block;
+          .row {
+            .time-item {
+              border: 1px solid rgba(0, 0, 0, 0.3);
+              font-size: 1.8rem;
+              font-weight: 400;
+              color: #021825;
+              cursor: pointer;
+              &:hover {
+                background: gray;
+                color: white;
+                border-color: gray;
+              }
+              &.active {
+                background: #fad3da;
+                border-color: #fad3da;
+                color: #01215c;
+                font-weight: 500;
+              }
+            }
+          }
+          .bottom-text {
+            font-size: 1.8rem;
+            font-weight: 400;
+          }
+        }
+        &.visible {
+          .react-calendar {
+            display: block !important;
+          }
+          .time-panel {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

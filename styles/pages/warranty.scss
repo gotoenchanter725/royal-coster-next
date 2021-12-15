@@ -1,0 +1,125 @@
+.warranty_page {
+  .hero-section {
+    background: url(/img/warranty/banner_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    .r-container {
+      padding-top: 20rem;
+      padding-bottom: 5rem;
+      @media (max-width: 991px) {
+        padding-top: 15rem;
+      }
+      .title {
+        font-size: 7.2rem;
+        font-weight: 400;
+        line-height: 102%;
+        & > span {
+          font-family: FreeSerif;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 7.6rem;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .r-container {
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        .title {
+          width: 80%;
+          font-size: 5.8rem;
+          line-height: 1;
+          span {
+            font-size: 5.8rem;
+            line-height: 98%;
+          }
+        }
+      }
+    }
+    @media (max-width: 575px) {
+      .r-container {
+        p {
+          font-size: 1.8rem;
+        }
+        .title {
+          width: 100%;
+          font-size: 3.4rem;
+          span {
+            font-size: 3.4rem;
+          }
+        }
+      }
+    }
+  }
+  .guide-section {
+    background: #f7f3ec;
+    .title {
+      font-size: 4.8rem;
+      font-weight: 400;
+      color: #01215c;
+      span {
+        font-style: italic;
+        font-family: FreeSerif;
+      }
+    }
+    .guide-text {
+      font-size: 24px;
+      line-height: 150%;
+      font-weight: 400;
+      color: rgba(2, 24, 37, 0.8);
+    }
+    @media (max-width: 575px) {
+      .title {
+        width: 100%;
+        font-size: 3.6rem;
+      }
+      .guide-text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .text-section {
+    .bg-grey {
+      background: #f7f3ec;
+    }
+    .r-container {
+      width: 50%;
+      margin: auto;
+      @media (max-width: 767px) {
+        width: 70%;
+      }
+      @media (max-width: 575px) {
+        width: 85%;
+      }
+    }
+    .faq-list-panel {
+      .title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        color: rgba(2, 24, 37, 0.5);
+      }
+      ul {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 180%;
+      }
+    }
+    .faq-panel {
+      .title {
+        font-family: FreeSerif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 46px;
+        color: #021825;
+      }
+      .answer-panel {
+        font-weight: 350;
+        font-size: 18px;
+        line-height: 150%;
+        color: rgba(2, 24, 37, 0.7);
+      }
+    }
+  }
+}

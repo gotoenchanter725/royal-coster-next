@@ -1,0 +1,594 @@
+.tour-detail_page {
+  .hero-section {
+    position: relative;
+    .bg-panel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .r-container {
+      position: relative;
+      z-index: 2;
+      padding-top: 20rem;
+      padding-bottom: 5rem;
+      @media (max-width: 991px) {
+        padding-top: 10rem;
+      }
+      p {
+        font-size: 2.4rem;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .title {
+        font-size: 7.2rem;
+        font-weight: 400;
+        line-height: 102%;
+        color: white;
+        & > span {
+          font-family: FreeSerif;
+          font-weight: 400;
+          font-style: italic;
+          font-size: 7.6rem;
+        }
+      }
+      .description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    .btn-play {
+      position: absolute;
+      bottom: 60px;
+      right: 50px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid white;
+      font-size: 40px;
+      font-weight: lighter;
+      color: #c4c4c4;
+      z-index: 2;
+      &:hover {
+        border-color: #b6b6b6;
+        color: #b6b6b6;
+      }
+    }
+    @media (max-width: 767px) {
+      .r-container {
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        .title {
+          width: 80%;
+          font-size: 5.8rem;
+          line-height: 1;
+          span {
+            font-size: 5.8rem;
+            line-height: 98%;
+          }
+        }
+      }
+      .btn-play {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        bottom: 30px;
+        right: 25px;
+      }
+    }
+    @media (max-width: 575px) {
+      .r-container {
+        p {
+          font-size: 1.8rem;
+        }
+        .title {
+          width: 100%;
+          font-size: 3.4rem;
+          span {
+            font-size: 3.4rem;
+          }
+        }
+      }
+      .btn-play {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        bottom: 30px;
+        right: 25px;
+      }
+    }
+  }
+  .guide-section {
+    background: #f7f3ec;
+    .title {
+      font-size: 4.8rem;
+      font-weight: 400;
+      color: #01215c;
+      & > span {
+        font-family: FreeSerif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 5.2rem;
+      }
+    }
+    .guide-text,
+    .description-cost {
+      font-size: 24px;
+      line-height: 150%;
+      font-weight: 400;
+      color: rgba(2, 24, 37, 0.8);
+    }
+    .description-cost {
+      font-weight: 500;
+    }
+    @media (max-width: 575px) {
+      .title {
+        width: 100%;
+        font-size: 3.6rem;
+      }
+      .guide-text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .banner-section {
+    position: relative;
+    .cover-image-panel {
+      .MuiSkeleton-rect {
+        position: relative;
+        z-index: 2;
+      }
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        height: 250px;
+        width: 100%;
+        background: #f7f3ec;
+        z-index: 1;
+      }
+      .banner-panel {
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        img,
+        video {
+          width: 100%;
+        }
+        .btn-play {
+          font-size: 80px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #c4c4c4;
+          &:hover {
+            color: #b6b6b6;
+          }
+          @media (max-width: 575px) {
+            font-size: 50px;
+          }
+        }
+      }
+    }
+    .slider-panel {
+      position: relative;
+      z-index: 2;
+      .image-panel {
+        overflow: hidden;
+        img {
+          height: 180px;
+          width: 100%;
+          object-fit: cover;
+          object-position: 0 20%;
+        }
+      }
+    }
+  }
+  .overview-section {
+    .title {
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 120%;
+    }
+    .description {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+    }
+    .contact-form {
+      * {
+        font-size: 14px;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input,
+      select,
+      textarea {
+        resize: none;
+        border-radius: 5px;
+        &:focus {
+          border-color: #01215c;
+          box-shadow: none;
+        }
+      }
+      .MuiOutlinedInput-root {
+        border-radius: 5px;
+        .MuiOutlinedInput-notchedOutline {
+          top: 0;
+        }
+        &.Mui-focused {
+          .MuiOutlinedInput-notchedOutline {
+            border-color: #01215c;
+            border-width: 1px;
+          }
+        }
+        &:hover {
+          .MuiOutlinedInput-notchedOutline {
+            border-color: rgba(0, 0, 0, 0.23);
+          }
+        }
+        &:focus {
+          .MuiOutlinedInput-notchedOutline {
+            border-color: #01215c;
+            border-width: 1px;
+          }
+        }
+      }
+      .MuiCalendarPicker-root {
+        * {
+          font-size: 14px;
+        }
+      }
+      .MuiOutlinedInput-input {
+        padding: 10px 15px;
+      }
+    }
+    .book-date {
+      .react-calendar {
+        border: 0;
+        width: 100%;
+        * {
+          color: black;
+          font-size: 1.8rem;
+          font-weight: 400;
+        }
+        abbr[title] {
+          text-decoration: none;
+          font-weight: 500;
+        }
+        .react-calendar__navigation {
+          border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+        }
+        button {
+          &.react-calendar__tile {
+            overflow: unset !important;
+            position: relative;
+            margin-top: 20px;
+
+            &.react-calendar__tile--now {
+              background: transparent;
+              &:hover {
+                background: #e6e6e6;
+              }
+            }
+
+            &.react-calendar__tile--active {
+              background: #f2f3f4;
+            }
+            &.react-calendar__month-view__days__day {
+              abbr {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 43px;
+                height: 43px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                transition-duration: 0.5s;
+              }
+              &.react-calendar__tile--now {
+                background: transparent;
+              }
+              &:hover {
+                background: transparent;
+                abbr {
+                  transition-duration: 0.7s;
+                  border-radius: 50px;
+                  background: gainsboro;
+                  background: gainsboro;
+                  color: #01215c;
+                  font-weight: 500;
+                }
+              }
+              &.react-calendar__tile--active {
+                background: transparent;
+                abbr {
+                  background: #18724c;
+                  color: #ffffff;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+        }
+        .react-calendar__navigation {
+          button {
+            font-size: 2.5rem;
+            &:hover,
+            &:focus {
+              background: transparent;
+            }
+            &[disabled] {
+              background: transparent;
+            }
+          }
+        }
+
+        @media (max-width: 450px) {
+          padding: 10px;
+          * {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      border: 1px solid rgba(2, 24, 37, 0.1);
+      * {
+        font-size: 1.4rem;
+        @media (max-width: 767px) {
+          font-size: 1.8rem;
+        }
+        @media (max-width: 500px) {
+          font-size: 1.4rem;
+        }
+      }
+      .title-panel {
+        .title {
+          font-weight: 400;
+          font-size: 3.6rem;
+          line-height: 120%;
+          @media (max-width: 767px) {
+            font-size: 2.8rem;
+          }
+        }
+        .status {
+          background: rgba(24, 114, 76, 0.2);
+          border-radius: 40px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: normal;
+          color: #18724c;
+        }
+      }
+      .rdrCalendarWrapper {
+        width: 100%;
+        .rdrDateDisplayWrapper {
+          display: none;
+        }
+        .rdrMonthAndYearWrapper {
+          border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+        }
+        .rdrMonthsVertical {
+          .rdrMonth {
+            width: 100%;
+            .rdrDay {
+              height: 3.2em;
+            }
+          }
+        }
+      }
+    }
+    .btn-available {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      color: #18724c;
+    }
+  }
+  .booking-section {
+    .ticket-panel {
+      border: 1px solid rgba(2, 24, 37, 0.1);
+      p {
+        font-size: 2.4rem;
+        font-weight: 500;
+        @media (max-width: 1024px) {
+          font-size: 1.8rem;
+        }
+      }
+      .btn-ticket {
+        font-size: 1.8rem;
+        @media (max-width: 1024px) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .booking-panel {
+      .booking-list-panel {
+        border: 1px solid rgba(2, 24, 37, 0.1);
+        .title-panel {
+          .title {
+            font-size: 3.6rem;
+            font-weight: 400;
+            @media (max-width: 767px) {
+              font-size: 2.8rem;
+            }
+          }
+          .status {
+            background: rgba(240, 0, 54, 0.1);
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+            color: #a20024;
+            border-radius: 20px;
+          }
+        }
+        .booking-list {
+          font-size: 1.8rem;
+          font-weight: 400;
+        }
+      }
+      .direction-panel {
+        border: 1px solid rgba(2, 24, 37, 0.1);
+        height: 100%;
+        .title-panel {
+          .title {
+            font-size: 3.6rem;
+            font-weight: 400;
+            @media (max-width: 767px) {
+              font-size: 2.8rem;
+            }
+          }
+          .status {
+            color: #01215c;
+            background: rgba(1, 33, 92, 0.05);
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+  .description-section {
+    .main-panel {
+      .image-panel {
+        position: relative;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+        .cost-box {
+          position: absolute;
+          top: 10px;
+          right: 25px;
+          background: #fad3da;
+          * {
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 15px;
+          }
+        }
+      }
+      .text-panel {
+        .title {
+          font-weight: 400;
+          font-size: 48px;
+          line-height: 120%;
+          @media (max-width: 767px) {
+            font-size: 3.4rem;
+          }
+        }
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+          color: rgba(2, 24, 37, 0.8);
+        }
+      }
+    }
+    .sub-panel {
+      img {
+        width: 100%;
+      }
+      .title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: rgba(2, 24, 37, 0.8);
+      }
+    }
+    .btn-read-more {
+      font-size: 1.8rem;
+    }
+  }
+  .more-tour-section {
+    .title-panel {
+      background: #f7f3ec;
+      .title {
+        font-weight: normal;
+        font-size: 4.8rem;
+        line-height: 102%;
+        span {
+          font-family: FreeSerif;
+          font-size: 5.2rem;
+          font-style: italic;
+        }
+      }
+    }
+    .tours-panel {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        background: #f7f3ec;
+        height: 100px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .r-container {
+        position: relative;
+        z-index: 2;
+        .image-panel {
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+          }
+        }
+        .title {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 130%;
+        }
+        .description {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+          color: rgba(2, 24, 37, 0.7);
+          display: -webkit-box;
+          word-break: break-all;
+          -webkit-line-clamp: 5;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .more-detail {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 18px;
+          * {
+            font-size: 1.8rem;
+          }
+        }
+      }
+      .btn-more {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

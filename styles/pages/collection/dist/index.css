@@ -1,0 +1,146 @@
+.collection_page .hero-section {
+  background: url(/img/collection/banner_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.collection_page .hero-section .r-container {
+  padding-top: 17rem;
+  padding-bottom: 11rem;
+}
+@media (max-width: 991px) {
+  .collection_page .hero-section .r-container {
+    padding-top: 12rem;
+    padding-bottom: 9rem;
+  }
+}
+.collection_page .hero-section .r-container .title {
+  font-size: 7.2rem;
+  color: white;
+  font-family: FreeSerif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 7.6rem;
+}
+.collection_page .hero-section .r-container .btn-play {
+  font-size: 4rem;
+  z-index: 3;
+  color: rgba(255, 255, 255, 0.7);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.collection_page .hero-section .r-container .btn-play:hover {
+  color: rgba(255, 255, 255, 0.8);
+  transition-duration: 0.7s;
+}
+@media (max-width: 767px) {
+  .collection_page .hero-section .r-container .btn-play {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 767px) {
+  .collection_page .hero-section .r-container {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  .collection_page .hero-section .r-container .title {
+    font-size: 5.8rem;
+    line-height: 1;
+  }
+}
+@media (max-width: 575px) {
+  .collection_page .hero-section .r-container {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+  .collection_page .hero-section .r-container .title {
+    width: 100%;
+    font-size: 4.42rem;
+  }
+}
+.collection_page .guide-section {
+  background: #f7f3ec;
+}
+.collection_page .guide-section .title {
+  font-size: 4.8rem;
+  font-weight: 400;
+  color: #01215c;
+}
+.collection_page .guide-section .title span {
+  font-family: FreeSerif;
+  font-style: italic;
+  font-size: 5.2rem;
+}
+.collection_page .guide-section .guide-text {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 400;
+  color: rgba(2, 24, 37, 0.8);
+}
+@media (max-width: 575px) {
+  .collection_page .guide-section .title {
+    width: 100%;
+    font-size: 3.2rem;
+  }
+  .collection_page .guide-section .title span {
+    font-size: 3.6rem;
+  }
+  .collection_page .guide-section .guide-text {
+    font-size: 1.8rem;
+  }
+}
+.collection_page .collection-section .collection-panel .image-panel .sub-image {
+  width: 50%;
+  margin-right: -6%;
+  z-index: 2;
+  filter: drop-shadow(-24px 0px 50px rgba(0, 0, 0, 0.06));
+  border-radius: 12px;
+}
+.collection_page .collection-section .collection-panel .image-panel .main-image {
+  width: 70%;
+  border-radius: 12px;
+  margin-left: -11%;
+}
+.collection_page .collection-section .collection-panel .text-panel .title {
+  font-weight: 350;
+  font-size: 48px;
+  line-height: 110%;
+}
+.collection_page .collection-section .collection-panel .text-panel .description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(2, 24, 37, 0.7);
+}
+.collection_page .collection-section .collection-panel .text-panel .btn-explore {
+  border: 1px solid #fad3da;
+  box-sizing: border-box;
+  border-radius: 9px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #01215c;
+}
+.collection_page .collection-section .collection-panel .text-panel .btn-explore:hover {
+  background: #fad3da;
+}
+.collection_page .our-collection-section {
+  background: rgba(250, 211, 218, 0.5);
+}
+.collection_page .our-collection-section .title-panel .title {
+  font-weight: normal;
+  font-size: 3.6rem;
+  font-family: FreeSerif;
+  font-style: italic;
+  color: #021825;
+}
+.collection_page .our-collection-section .slider-panel .image-panel {
+  overflow: hidden;
+}
+.collection_page .our-collection-section .slider-panel .image-panel img {
+  width: 100%;
+}
+.collection_page .our-collection-section .slider-panel .title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+}

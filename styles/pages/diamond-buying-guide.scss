@@ -1,0 +1,132 @@
+.diamond-buying-guide_page {
+  .hero-section {
+    background: url(/img/diamond-buying-guide/banner_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    .r-container {
+      padding-top: 25rem;
+      padding-bottom: 5rem;
+      @media (max-width: 991px) {
+        padding-top: 15rem;
+      }
+      .title {
+        font-size: 7.2rem;
+        font-weight: 400;
+        line-height: 102%;
+        & > span {
+          font-family: FreeSerif;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 7.6rem;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .r-container {
+        padding-top: 13rem;
+        padding-bottom: 3rem;
+        .title {
+          width: 80%;
+          font-size: 5.8rem;
+          line-height: 1;
+          span {
+            font-size: 5.8rem;
+            line-height: 98%;
+          }
+        }
+      }
+    }
+    @media (max-width: 575px) {
+      .r-container {
+        p {
+          font-size: 1.8rem;
+        }
+        .title {
+          width: 100%;
+          font-size: 3.4rem;
+          span {
+            font-size: 3.4rem;
+          }
+        }
+      }
+    }
+  }
+  .guide-section {
+    background: #f7f3ec;
+    .title {
+      font-size: 4.8rem;
+      font-weight: 400;
+      color: #01215c;
+      span {
+        font-family: FreeSerif;
+        font-style: italic;
+      }
+    }
+    .guide-text {
+      a {
+        font-weight: 500;
+        &:hover {
+          color: black;
+        }
+      }
+      font-size: 24px;
+      line-height: 150%;
+      font-weight: 400;
+      color: rgba(2, 24, 37, 0.8);
+    }
+    @media (max-width: 575px) {
+      .title {
+        width: 100%;
+        font-size: 3.6rem;
+      }
+      .guide-text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .main-section {
+    .guide-panel {
+      .title {
+        font-family: FreeSerif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 120%;
+        color: #021825;
+      }
+      .description {
+        font-weight: 350;
+        font-size: 18px;
+        line-height: 150%;
+        color: rgba(2, 24, 37, 0.7);
+      }
+      .subTitle {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: rgba(2, 24, 37, 0.7);
+      }
+      .image-panel {
+        img {
+          width: 100%;
+        }
+      }
+      .btn-learn-more {
+        border: 1px solid #01215c;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: #01215c;
+        &:active {
+          box-shadow: none;
+          border-color: transparent;
+        }
+        &:hover {
+          background: #01215c;
+          color: white;
+        }
+      }
+    }
+  }
+}

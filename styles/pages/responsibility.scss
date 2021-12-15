@@ -1,0 +1,249 @@
+.responsibility_page {
+  .hero-section {
+    background: linear-gradient(0deg, #021825 0%, rgba(1, 33, 92, 0) 100%), url(/img/responsibility/banner_bg.jpg);
+    background-size: cover;
+    background-position: top;
+    .r-container {
+      padding-top: 20rem;
+      padding-bottom: 5rem;
+      @media (max-width: 991px) {
+        padding-top: 15rem;
+      }
+      p {
+        font-size: 2.4rem;
+        color: white;
+      }
+      .title {
+        font-size: 7.2rem;
+        font-weight: 400;
+        color: white;
+        line-height: 102%;
+        & > span {
+          font-family: FreeSerif;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 7.6rem;
+        }
+      }
+      .description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    @media (max-width: 767px) {
+      .r-container {
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        .title {
+          width: 80%;
+          font-size: 5.8rem;
+          line-height: 1;
+          span {
+            font-size: 5.8rem;
+            line-height: 98%;
+          }
+        }
+      }
+    }
+    @media (max-width: 575px) {
+      .r-container {
+        p {
+          font-size: 1.8rem;
+        }
+        .title {
+          width: 100%;
+          font-size: 3.4rem;
+          span {
+            font-size: 3.4rem;
+          }
+        }
+      }
+    }
+  }
+  .guide-section {
+    background: #f7f3ec;
+    .title {
+      font-size: 4.8rem;
+      font-weight: 400;
+      color: #01215c;
+    }
+    .guide-text {
+      font-size: 24px;
+      line-height: 150%;
+      font-weight: 400;
+      color: rgba(2, 24, 37, 0.8);
+    }
+    @media (max-width: 575px) {
+      .title {
+        width: 100%;
+        font-size: 3.6rem;
+      }
+      .guide-text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .description-section {
+    .main-panel {
+      .image-panel {
+        position: relative;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+        .cost-box {
+          position: absolute;
+          top: 10px;
+          right: 25px;
+          background: #fad3da;
+          * {
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 15px;
+          }
+        }
+      }
+      .text-panel {
+        .title {
+          font-weight: 400;
+          font-size: 3.2rem;
+          line-height: 120%;
+          @media (max-width: 767px) {
+            font-size: 2.4rem;
+          }
+        }
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+          color: rgba(2, 24, 37, 0.8);
+        }
+      }
+    }
+    .sub-panel {
+      img {
+        width: 100%;
+      }
+      .title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: rgba(2, 24, 37, 0.8);
+      }
+      .more-detail {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        * {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .btn-read-more {
+      font-size: 1.8rem;
+    }
+  }
+  .sponsorship-section {
+    .title-panel {
+      background: rgba(250, 211, 218, 0.5);
+      .title {
+        font-weight: normal;
+        font-size: 4.8rem;
+        line-height: 102%;
+        span {
+          font-family: FreeSerif;
+          font-style: italic;
+          font-size: 5.2rem;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: rgba(2, 24, 37, 0.7);
+      }
+    }
+    .tours-panel {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        background: rgba(250, 211, 218, 0.5);
+        height: 100px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .r-container {
+        position: relative;
+        z-index: 2;
+        .image-panel {
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+        }
+        .title {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 130%;
+        }
+        .description {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+          color: rgba(2, 24, 37, 0.7);
+        }
+        .more-detail {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 18px;
+          * {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+  .banner-section {
+    overflow: hidden;
+    .bg-panel {
+      background: url(/img/tour/banner-image.png);
+      background-size: cover;
+      background-position: center;
+      min-height: 400px;
+      @media (max-width: 575px) {
+        min-height: 280px;
+      }
+    }
+    .text-panel {
+      background: #021825;
+      .title {
+        font-weight: 400;
+        font-size: 3.6rem;
+        line-height: 120%;
+        color: #ffffff;
+        @media (max-width: 575px) {
+          font-size: 2.8rem;
+        }
+      }
+      .description {
+        font-weight: 350;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .btn {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

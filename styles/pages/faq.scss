@@ -1,0 +1,138 @@
+.faq_page {
+  .hero-section {
+    background: linear-gradient(75.87deg, #01215c 12.8%, rgba(1, 33, 92, 0) 66.93%), url(/img/faq/banner_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    .r-container {
+      padding-top: 20rem;
+      padding-bottom: 5rem;
+      @media (max-width: 991px) {
+        padding-top: 15rem;
+      }
+      .title {
+        font-size: 7.2rem;
+        font-weight: 400;
+        line-height: 102%;
+        & > span {
+          font-family: FreeSerif;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 7.6rem;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .r-container {
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        .title {
+          width: 80%;
+          font-size: 5.8rem;
+          line-height: 1;
+          span {
+            font-size: 5.8rem;
+            line-height: 98%;
+          }
+        }
+      }
+    }
+    @media (max-width: 575px) {
+      .r-container {
+        p {
+          font-size: 1.8rem;
+        }
+        .title {
+          width: 100%;
+          font-size: 3.4rem;
+          span {
+            font-size: 3.4rem;
+          }
+        }
+      }
+    }
+  }
+  .guide-section {
+    background: #f7f3ec;
+    .title {
+      font-size: 4.8rem;
+      font-weight: 400;
+      color: #01215c;
+      span {
+        font-family: FreeSerif;
+        font-style: italic;
+      }
+    }
+    .guide-text {
+      font-size: 24px;
+      line-height: 150%;
+      font-weight: 400;
+      color: rgba(2, 24, 37, 0.8);
+    }
+    @media (max-width: 575px) {
+      .title {
+        width: 100%;
+        font-size: 3.6rem;
+      }
+      .guide-text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .question-section {
+    a {
+      text-decoration: underline;
+    }
+    .search-panel {
+      input {
+        background: #f6f6f6;
+        font-size: 1.6rem;
+        font-weight: 400;
+        border: 1px solid transparent;
+        &:focus {
+          border-color: #01215c;
+        }
+      }
+      .btn-search {
+        font-size: 1.6rem;
+      }
+    }
+    .question-panel {
+      .title {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 120%;
+        color: #021825;
+      }
+      .accordion-item {
+        &:last-child {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        }
+        .accordion-button {
+          font-size: 2.4rem;
+          font-weight: 400;
+          &:not(.collapsed) {
+            background: transparent;
+            color: #01215c;
+            &:after {
+              opacity: 0.7;
+              background-image: url(/img/common/dash.svg);
+            }
+          }
+          &:focus {
+            box-shadow: none;
+          }
+          &::after {
+            opacity: 0.7;
+            background-image: url(/img/common/plus.svg);
+          }
+        }
+        .accordion-body {
+          font-weight: 350;
+          font-size: 18px;
+          line-height: 150%;
+          color: rgba(2, 24, 37, 0.7);
+        }
+      }
+    }
+  }
+}

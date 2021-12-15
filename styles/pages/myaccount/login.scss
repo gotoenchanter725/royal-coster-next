@@ -1,0 +1,116 @@
+.login_page {
+	#header {
+		border-bottom: 1px solid rgba(2, 24, 37, 0.05);
+	}
+	height: 100vh;
+	.main-panel {
+		position: relative;
+		overflow-x: hidden;
+		flex: 1;
+		.main-box {
+			padding: 30px;
+			position: relative;
+			z-index: 5;
+			max-width: 630px;
+			width: 100%;
+			background: #ffffff;
+			box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.06);
+			border-radius: 15px;
+			.title {
+				font-family: FreeSerif;
+				font-style: italic;
+				font-weight: 400;
+				font-size: 36px;
+				line-height: 46px;
+				color: #01215c;
+				margin-bottom: 8px;
+			}
+			.description {
+				font-size: 13px;
+				line-height: 17px;
+				color: rgba(2, 24, 37, 0.7);
+				border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+				padding-bottom: 17px;
+				margin-bottom: 30px;
+			}
+			.form-control {
+				font-size: 13px;
+				padding: 16px 24px;
+				color: #01215c;
+				border: 1px solid rgba(1, 33, 92, 0.1);
+				border-radius: 9px;
+				margin-bottom: 16px;
+				&:focus {
+					border: 1px solid #01215c;
+					box-shadow: none;
+				}
+			}
+			.btn-login {
+				margin-top: 32px;
+				margin-bottom: 20px;
+				padding: 16px 24px;
+			}
+			.btn-login,
+			.btn-create-account {
+				color: white;
+				font-weight: 500;
+				font-size: 13px;
+				border-radius: 9px;
+				background: #01215c;
+				width: 100%;
+			}
+			.login-help-panel {
+				padding-bottom: 30px;
+				margin-bottom: 30px;
+			}
+			.btn-create-account {
+				padding: 16px 24px;
+				background: #021825;
+			}
+			#rememberme {
+				&:checked {
+					background-color: #01215c;
+				}
+				border-color: #01215c;
+				width: 20px;
+				height: 20px;
+				&:focus {
+					box-shadow: none;
+				}
+			}
+			.form-check-label {
+				font-weight: 350;
+				font-size: 14px;
+				color: rgba(2, 24, 37, 0.7);
+			}
+			.btn-forgot-password {
+				color: rgba(2, 24, 37, 0.7);
+				font-weight: 350;
+				font-size: 14px;
+			}
+			.login-help-panel {
+				border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+			}
+		}
+		.blur-pink-panel,
+		.blur-blue-panel {
+			position: absolute;
+			top: 20%;
+			left: calc(50% - 80px);
+			height: 70%;
+			width: 80px;
+			background: #fad3da;
+			opacity: 0.8;
+			filter: blur(150px);
+			transform: rotate(-45deg);
+		}
+		.blur-blue-panel {
+			background-color: rgba(19, 67, 155, 0.6);
+			transform: rotate(-45deg);
+			left: auto;
+			top: 25%;
+			right: calc(50% - 80px);
+			height: 50%;
+		}
+	}
+}

@@ -1,0 +1,227 @@
+.purchases_panel {
+	.bordered {
+		border: 1px solid rgba(2, 24, 37, 0.1);
+	}
+	.title {
+		font-family: FreeSerif;
+		font-style: italic;
+		font-weight: 400;
+		font-size: 36px;
+		color: #021825;
+		border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+		padding-bottom: 18px;
+		margin-bottom: 24px;
+		span {
+			font-family: FreeSerif;
+			font-style: italic;
+			color: rgba(2, 24, 37, 0.5);
+		}
+	}
+	.list-panel {
+		.item-panel {
+			border: 1px solid rgba(2, 24, 37, 0.1);
+			border-radius: 12px;
+			.title-panel {
+				padding: 30px !important;
+				border-right: 1px solid rgba(2, 24, 37, 0.1);
+				&.loading {
+					padding: 15px !important;
+				}
+				@media (max-width: 767px) {
+					border-right: 0;
+					border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+				}
+				h3 {
+					font-weight: 400;
+					font-size: 12px;
+					line-height: 15px;
+					color: rgba(2, 24, 37, 0.7);
+				}
+				p {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 18px;
+					color: #021825;
+				}
+			}
+			.order-panel {
+				padding: 30px 24px !important;
+				.product-panel {
+					.image-panel {
+						width: 120px;
+						height: 120px;
+						overflow: hidden;
+						border: 1px solid rgba(2, 24, 37, 0.1);
+						border-radius: 10px;
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+						@media (max-width: 500px) {
+							width: 100%;
+							min-height: 250px;
+							height: auto;
+						}
+					}
+				}
+				.btn-panel {
+					margin-top: 15px;
+					@media (max-width: 575px) {
+						.btn {
+							width: 100%;
+						}
+					}
+					.btn-order-detail {
+						padding: 10px 18px;
+						line-height: 15px;
+						font-weight: 500;
+						font-size: 12px;
+					}
+					.btn-reorder {
+						padding: 10px 18px;
+						font-weight: 500;
+						font-size: 12px;
+						line-height: 15px;
+						color: rgba(2, 24, 37, 0.7);
+						background: #f6f6f6;
+						border: 1px solid #f6f6f6;
+						&:hover {
+							background: transparent;
+						}
+					}
+				}
+			}
+		}
+	}
+	.order-detail-panel {
+		.btn-back {
+			font-size: 14px;
+			color: rgba(2, 24, 37, 0.7);
+		}
+		.order-panel {
+			span,a {
+				font-size: 14px;
+				color: rgba(2, 24, 37, 0.7);
+			}
+			p {
+				font-weight: 500;
+				font-size: 18px;
+				color: #021825;
+			}
+			.btn {
+				font-size: 12px;
+			}
+		}
+		.other-panel {
+			.sub-title {
+				font-weight: 500;
+				font-size: 18px;
+				color: #021825;
+			}
+			p {
+				font-size: 14px;
+				color: #021825;
+			}
+		}
+		.product-panel {
+			.h3 {
+				font-weight: 500;
+				font-size: 18px;
+				color: #021825;
+			}
+			.item-panel {
+				&:not(.item-panel:last-child) {
+					border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+				}
+				.image-panel {
+					position: relative;
+					padding-top: 100%;
+					img {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+				p {
+					font-size: 14px;
+					color: rgba(2, 24, 37, 0.7);
+				}
+				.product-price {
+					font-family: FreeSerif;
+					font-style: italic;
+					font-size: 18px;
+					line-height: 23px;
+					color: #01215c;
+				}
+			}
+		}
+		.paid-panel {
+			background-color: #f6f6f6;
+			.sub-title {
+				font-weight: 500;
+				font-size: 24px;
+				color: #01215c;
+			}
+			.price-panel {
+				border-top: 1px solid rgba(2, 24, 37, 0.1);
+				border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+			}
+			.total-panel {
+				span {
+					font-weight: 500;
+				}
+			}
+			span {
+				font-size: 18px;
+				color: #021825;
+			}
+			.exclude-vat {
+				span {
+					color: rgba(2, 24, 37, 0.5);
+				}
+			}
+		}
+		.need-help-panel {
+			border: 1px solid rgba(2, 24, 37, 0.1);
+			.title-panel {
+				border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+				h3 {
+					font-size: 1.6rem;
+					font-weight: 400;
+				}
+				.link-panel {
+					font-size: 1.6rem;
+					font-weight: 400;
+					color: #01215c;
+				}
+			}
+			.purchase-panel {
+				h3 {
+					font-size: 1.6rem;
+					font-weight: 400;
+				}
+				button {
+					background: #fad3da;
+					border-radius: 0.6rem;
+					font-weight: 400;
+					font-size: 1.4rem;
+					border: 1px solid transparent;
+					&:hover {
+						border-color: #01215c;
+						background: transparent;
+					}
+				}
+			}
+		}
+	}
+	.no-result {
+		padding-top: 30px;
+		color: rgba(2, 24, 37, 0.7);
+		font-weight: 400;
+        font-size: 3.4rem;
+	}
+}

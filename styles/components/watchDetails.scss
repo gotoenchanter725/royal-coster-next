@@ -1,0 +1,82 @@
+.watch-detail-section {
+	.watch-info-panel {
+		.text-panel {
+			border-top: 1px solid rgba(2, 24, 37, 0.1);
+			border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+			.watch-title {
+				font-size: 48px;
+				line-height: 120%;
+				font-weight: 400;
+			}
+			.watch-description {
+				color: rgba(2, 24, 37, 0.8);
+				font-size: 24px;
+				line-height: 150%;
+				font-weight: 400;
+			}
+			.btn-show-watch {
+				font-size: 1.8rem;
+			}
+		}
+		.image-panel {
+			padding-top: 50%;
+			position: relative;
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+	.watch-items-panel {
+		.title {
+			font-family: FreeSerif;
+			font-style: italic;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 120%;
+			color: #021825;
+			border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+		}
+		.item-panel {
+			.image-panel {
+				padding-top: 120%;
+				position: relative;
+				border: 1px solid rgba(2, 24, 37, 0.1);
+				img {
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					object-fit: cover;
+				}
+			}
+			.item-title {
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 120%;
+				color: #021825;
+			}
+			.item-id {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 120%;
+				color: rgba(2, 24, 37, 0.7);
+			}
+			.item-cost {
+				font-weight: 400;
+				font-size: 24px;
+				color: #01215c;
+			}
+		}
+	}
+	.empty-text {
+		font-size: 3.4rem;
+		font-weight: 400;
+		color: #636363;
+	}
+}

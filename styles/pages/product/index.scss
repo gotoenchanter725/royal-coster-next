@@ -1,0 +1,359 @@
+#productPage {
+  .state-section {
+    .link-panel {
+      font-size: 1.4rem;
+      color: rgba(0, 0, 0, 0.5);
+      * {
+        font-weight: 500;
+      }
+      a {
+        &:not(.back-arrow) {
+          text-decoration: underline;
+        }
+      }
+      .back-arrow {
+        font-size: 1.6rem;
+      }
+      span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .confirm-section {
+    .show-product {
+      .tile-product {
+        button {
+          width: 100%;
+          border: 1px solid rgba(2, 24, 37, 0.1);
+          overflow: hidden;
+          img {
+            transition-duration: 0.5s;
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+          }
+          &:focus {
+            box-shadow: none;
+            opacity: 0.6;
+          }
+          &:hover {
+            img {
+              transition-duration: 0.7s;
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+      .main-product {
+        .image-panel {
+          border: 1px solid rgba(2, 24, 37, 0.1);
+          overflow: hidden;
+          img {
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            transition-duration: 0.5s;
+          }
+          &:hover {
+            img {
+              transition-duration: 0.7s;
+              transform: scale(1.2);
+            }
+          }
+        }
+        .btn-panel {
+          button {
+            background: #f6f6f6;
+            font-size: 1.6rem;
+            font-weight: 400;
+            &:hover {
+              background: rgb(211, 211, 211);
+            }
+          }
+        }
+      }
+    }
+    .show-setting {
+      .title-panel {
+        width: 85%;
+        h3 {
+          font-size: 3.6rem;
+        }
+        .type {
+          font-family: FreeSerif, sans-serif;
+          color: rgba(1, 33, 92, 0.5);
+          font-style: italic;
+          font-weight: 400;
+        }
+        .title {
+          font-weight: 350;
+        }
+        .description {
+          font-size: 1.6rem;
+          color: rgba(2, 24, 37, 0.5);
+          font-weight: 500;
+        }
+      }
+      .confirm-panel {
+        border-top: 1px solid rgba(2, 24, 37, 0.1);
+        .material-setting-panel {
+          border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+          label {
+            font-size: 1.6rem;
+          }
+          .material-box {
+            button {
+              // border-radius: 50%;
+              // border: 1px solid rgba(1, 33, 92, 0.05);
+              // background: white;
+              // width: 34px;
+              // height: 34px;
+              // &:focus {
+              //   box-shadow: none;
+              //   border: 1px solid #01215c;
+              // }
+              &.btn-material {
+                background: #f6f6f6;
+                color: black;
+                font-weight: 400;
+                font-size: 1.4rem;
+                border: 2px solid #f6f6f6;
+                &.active {
+                  border-color: #c4a060;
+                }
+                &:hover {
+                  background: rgb(211, 211, 211);
+                }
+              }
+            }
+          }
+        }
+        .selector-panel {
+          font-size: 1.6rem;
+          font-weight: 400;
+          border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+          h3 {
+            font-weight: 400;
+            font-size: 1.6rem;
+          }
+          .btn-find-size {
+            border: 1px solid rgba(1, 33, 92, 0.1);
+            color: rgba(2, 24, 37, 0.5);
+            font-weight: 400;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            &:focus {
+              box-shadow: none;
+            }
+            &:hover {
+              background: rgba(2, 24, 37, 0.5);
+              color: white;
+            }
+          }
+          select {
+            font-size: 1.5rem;
+            font-weight: 400;
+            border: 1px solid rgba(1, 33, 92, 0.1);
+            &:focus {
+              box-shadow: none;
+            }
+          }
+          .btn-add-engraving {
+            font-size: 1.5rem;
+            font-weight: 400;
+            border: 1px solid rgba(1, 33, 92, 0.1);
+            border-radius: 8px;
+            width: 100%;
+            svg {
+              font-size: 2rem;
+            }
+          }
+        }
+        .cost-panel {
+          border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+          .price-panel {
+            h4 {
+              font-size: 1.2rem;
+              color: rgba(2, 24, 37, 0.5);
+              font-weight: 400;
+            }
+            h3 {
+              span {
+                font-family: FreeSerif;
+                font-style: italic;
+                font-size: 3.6rem;
+                color: #01215c;
+              }
+            }
+          }
+          .amount-panel {
+            button {
+              font-size: 2.4rem;
+              border: 1px solid rgba(2, 24, 37, 0.1);
+              width: 50px;
+              height: 50px;
+              &:focus {
+                box-shadow: none;
+              }
+              &:hover {
+                background: rgba(2, 24, 37, 0.1);
+              }
+            }
+            span {
+              font-size: 2.4rem;
+            }
+          }
+        }
+        .confirm-box {
+          border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+          .favor-btn {
+            background: rgba(2, 24, 37, 0.05);
+            color: rgba(1, 33, 92, 0.3);
+            font-size: 1.8rem;
+            &.favor {
+              color: red;
+            }
+            &:focus {
+              box-shadow: none;
+            }
+            &:hover {
+              * {
+                opacity: 0.8;
+              }
+            }
+          }
+          .setting-btn-panel {
+            flex: 1;
+            .btn {
+              font-size: 1.8rem;
+              font-weight: 400;
+            }
+            p {
+              font-size: 1.4rem;
+            }
+          }
+          @media (max-width: 818px) {
+            justify-content: center !important;
+            .favor-btn {
+              margin-bottom: 20px;
+            }
+          }
+        }
+        .help-panel {
+          font-size: 1.6rem;
+          border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+        }
+        .schedule-panel {
+          font-size: 1.6rem;
+          button {
+            font-size: 1.4rem;
+            border: 1px solid rgba(2, 24, 37, 0.1);
+            border-radius: 6px;
+            &:hover {
+              background: #01215c;
+              color: white;
+              border-color: #01215c;
+            }
+          }
+        }
+      }
+    }
+  }
+  .related-product-section {
+    .top-panel {
+      border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+      .title {
+        font-size: 3.6rem;
+        font-weight: 350;
+      }
+      button {
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+    .product-item {
+      position: relative;
+      .product-image {
+        width: 100%;
+        overflow: hidden;
+        background: #f6f6f6;
+        img {
+          width: 100%;
+          object-fit: cover;
+          transition-duration: 0.5s;
+        }
+      }
+      &:hover {
+        .product-image {
+          img {
+            transition-duration: 0.7s;
+            transform: scale(1.2);
+          }
+        }
+      }
+      h3 {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+      p {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: rgba(2, 24, 37, 0.7);
+      }
+      h4 {
+        font-weight: 400;
+        font-size: 2.4rem;
+      }
+      .favor-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2.5rem;
+        cursor: pointer;
+        z-index: 5;
+        .favor {
+          color: #eb162e;
+          display: none;
+        }
+        .unfavor {
+          display: block;
+        }
+        &.favor {
+          .favor {
+            display: block;
+          }
+          .unfavor {
+            display: none;
+          }
+        }
+      }
+      .color-panel {
+        button {
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          cursor: pointer;
+          &.white {
+            background: #eeeeee;
+          }
+          &.yellow {
+            background: #efd9a7;
+          }
+          &.platinium {
+            background: #dbdbdb;
+          }
+          &.rose-gold {
+            background: #ffcbcb;
+          }
+          &:focus {
+            box-shadow: none;
+            border: 1px solid #01215c;
+          }
+        }
+      }
+    }
+  }
+}

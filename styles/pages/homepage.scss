@@ -1,0 +1,211 @@
+$titleSize: 7.2rem;
+.homepage {
+  .hero {
+    overflow: hidden;
+    position: relative;
+    margin-top: 4rem;
+    // background: linear-gradient(180deg, #01215c 0%, rgba(1, 33, 92, 0) 50%);
+    background-size: cover;
+    background-position: center;
+    padding-top: 30rem;
+    @media (max-width: 425px) {
+      padding-top: 20rem;
+    }
+    .bg_video {
+      width: 100%;
+      z-index: 1;
+    }
+    & .text-panel {
+      h1 {
+        font-size: $titleSize;
+        color: #01215c;
+        font-weight: 400;
+        span {
+          font-family: FreeSerif;
+          font-weight: normal;
+          font-style: italic;
+        }
+      }
+      p {
+        color: rgba(1, 33, 92, 0.7);
+        font-size: 2rem;
+      }
+      @media (max-width: 425px) {
+        h1 {
+          font-size: 5rem;
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+    }
+    & .btn-panel {
+      padding-bottom: 10rem;
+      .btn {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        @media (max-width: 480px) {
+          width: 100%;
+        }
+      }
+    }
+    @media (max-width: 575px) {
+      background: #00070c;
+      padding-top: 5rem;
+      .r-container {
+        position: relative;
+        // z-index: 2;
+      }
+      .text-panel {
+        h1 {
+          color: white;
+        }
+        P {
+          color: white;
+        }
+      }
+      .btn-panel {
+        .rainbow-btn {
+          background: white;
+          color: black !important;
+          &:hover {
+            background: transparent;
+            color: white !important;
+            border-color: white;
+          }
+        }
+        .shop-now-btn {
+          border-color: white !important;
+          color: white !important;
+          &:hover {
+            background: white !important;
+            color: black !important;
+          }
+        }
+      }
+    }
+  }
+  .categories {
+    padding: 15px 0 15px 15px;
+    > div {
+      padding-right: 15px !important;
+    }
+    a {
+      & .category-item {
+        width: 100%;
+        height: 15vw;
+        position: relative;
+        overflow: hidden;
+        .hover-title {
+          position: absolute;
+          bottom: 0;
+          font-family: FreeSerif, sans-serif;
+          font-weight: normal;
+          font-style: italic;
+          width: 100%;
+          background: rgba(255, 255, 255, 0.3);
+          font-size: 2rem;
+          transform: translate(0, 100%);
+          transition-duration: 0.7s;
+          color: #021825;
+        }
+        &:hover {
+          .hover-title {
+            transform: translate(0, 0px);
+            transition-duration: 0.7s;
+          }
+          img {
+            transform: scale(1.2);
+            transition-duration: 0.7s;
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition-duration: 0.7s;
+        }
+      }
+    }
+  }
+  .collection-section {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 100px;
+      background: #13439b;
+      opacity: 0.7;
+      filter: blur(150px);
+      transform: matrix(0.8, -0.46, 0.73, 0.83, 0, 0);
+      width: 10%;
+      height: 70%;
+      z-index: 1;
+    }
+  }
+}
+.discount-modal {
+  background: rgba(255, 255, 255, 0.2);
+  .modal-dialog {
+    @media (max-width: 1023px) {
+      max-width: 95vw;
+    }
+  }
+  .modal-content {
+    position: relative;
+    border-radius: 1.6rem;
+    box-shadow: 0px 14px 50px rgba(0, 0, 0, 0.1);
+    .close-btn {
+      position: absolute;
+      top: 5px;
+      width: 30px;
+      height: 30px;
+      right: 5px;
+      font-size: 2rem;
+      box-shadow: 0 0 10px white;
+      background: white;
+      border-radius: 50%;
+    }
+    .modal-image {
+      object-fit: cover;
+      @media (max-width: 575px) {
+        max-height: 250px;
+      }
+    }
+    .text-panel {
+      .title {
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 110%;
+        span {
+          font-style: italic;
+          font-family: FreeSerif;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: rgba(2, 24, 37, 0.7);
+      }
+    }
+    .form-panel {
+      overflow: hidden;
+      border: 2px solid #01215c;
+      * {
+        border: 0;
+        box-shadow: none;
+        outline: none;
+        font-size: 1.4rem;
+        border-radius: 0;
+      }
+      .btn {
+        white-space: nowrap;
+        background: #01215c;
+        color: white;
+      }
+    }
+  }
+}

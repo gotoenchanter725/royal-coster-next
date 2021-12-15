@@ -1,0 +1,213 @@
+.ringRecommend_page {
+  .hero-section {
+    margin-top: 4rem;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 41.07%), url(/img/ringRecommend/hero_bg.jpg);
+    background-size: cover;
+    .r-container {
+      padding-top: 40rem;
+      padding-bottom: 15rem;
+      @media (max-width: 991px) {
+        padding-top: 20rem;
+      }
+      .title {
+        font-size: 7.2rem;
+        font-weight: 400;
+        color: white;
+        & > span {
+          font-family: FreeSerif;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 7.6rem;
+          line-height: 120%;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      background: linear-gradient(66.22deg, #01215c9c 9.11%, rgba(1, 33, 92, 0) 39.58%),
+        url(/img/ringRecommend/hero_bg-mobile.jpg);
+      background-size: cover;
+      margin-top: 11rem;
+      .r-container {
+        padding-top: 18rem;
+        padding-bottom: 3rem;
+        .title {
+          width: 80%;
+          font-size: 5.8rem;
+          line-height: 1;
+          span {
+            font-size: 5.8rem;
+            line-height: 98%;
+          }
+        }
+      }
+    }
+    @media (max-width: 575px) {
+      .r-container {
+        .title {
+          width: 50%;
+          font-size: 4.2rem;
+          span {
+            font-size: 4.2rem;
+          }
+        }
+      }
+    }
+  }
+  .guide-section {
+    background: #f7f3ec;
+    .title {
+      font-size: 4.8rem;
+      font-weight: 400;
+      color: #01215c;
+    }
+    .guide-text {
+      font-size: 24px;
+      line-height: 150%;
+      font-weight: 400;
+      color: rgba(2, 24, 37, 0.8);
+    }
+
+    @media (max-width: 575px) {
+      .title {
+        font-size: 3.6rem;
+      }
+      .guide-text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .stepper-panel {
+    .MuiStep-root {
+      @media (max-width: 767px) {
+        padding: 0;
+      }
+      .MuiStepLabel-root {
+        padding: 0;
+        .MuiStepLabel-iconContainer {
+          @media (max-width: 767px) {
+            padding: 0;
+          }
+          .MuiSvgIcon-root {
+            width: 38px;
+            height: 38px;
+            color: transparent;
+            border: 2px solid rgba(1, 33, 92, 0.5);
+            border-radius: 50%;
+            text {
+              font-family: FreeSerif;
+              font-style: italic;
+              font-size: 1.2rem;
+              fill: rgba(1, 33, 92, 0.5);
+            }
+            &.Mui-active,
+            &.Mui-completed {
+              width: 40px;
+              height: 40px;
+              color: #01215c;
+              border: 0;
+              text {
+                fill: white;
+              }
+            }
+          }
+        }
+        .MuiStepLabel-labelContainer {
+          span {
+            font-size: 2.4rem;
+            color: #01215c;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .MuiStepConnector-root {
+      margin-left: 19px;
+      @media (max-width: 767px) {
+        margin-left: 0;
+      }
+      .MuiStepConnector-line {
+        border-left-width: 2px;
+      }
+      &.Mui-active {
+        .MuiStepConnector-line {
+          border-color: #01215c;
+        }
+      }
+    }
+    .content-panel {
+      label {
+        font-size: 4.8rem;
+        font-family: FreeSerif;
+        font-style: italic;
+        color: #01215c;
+      }
+      select {
+        font-size: 2rem;
+        color: #01215c;
+        font-weight: 400;
+      }
+      .btn-panel {
+        .btn-back {
+          background: rgba(1, 33, 92, 0.1);
+          * {
+            font-size: 2.4rem;
+          }
+        }
+        .btn-next {
+          font-size: 1.8rem;
+        }
+      }
+      @media (max-width: 767px) {
+        label {
+          font-size: 3.8rem;
+        }
+      }
+
+      @media (max-width: 575px) {
+        label {
+          font-size: 3.2rem;
+        }
+        select {
+          font-size: 1.6rem;
+        }
+        .btn-panel {
+          .btn-next {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+  .need-help-panel {
+    border: 1px solid rgba(2, 24, 37, 0.1);
+    .title-panel {
+      border-bottom: 1px solid rgba(2, 24, 37, 0.1);
+      h3 {
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+      .link-panel {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #01215c;
+      }
+    }
+    .purchase-panel {
+      h3 {
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+      button {
+        background: #fad3da;
+        border-radius: 0.6rem;
+        font-weight: 400;
+        font-size: 1.4rem;
+        border: 1px solid transparent;
+        &:hover {
+          border-color: #01215c;
+          background: transparent;
+        }
+      }
+    }
+  }
+}

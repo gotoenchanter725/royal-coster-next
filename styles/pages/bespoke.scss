@@ -1,0 +1,233 @@
+.bespoke_page {
+  overflow-x: hidden;
+  .hero-section {
+    margin-top: 4rem;
+    background: linear-gradient(47.22deg, #01215c -1.89%, rgba(1, 33, 92, 0) 39.58%), url(/img/bespoke/hero_bg.jpg);
+    background-size: cover;
+    .r-container {
+      padding-top: 40rem;
+      padding-bottom: 15rem;
+      @media (max-width: 991px) {
+        padding-top: 20rem;
+      }
+      .title {
+        font-size: 7.2rem;
+        font-weight: 400;
+        color: white;
+        & > span {
+          font-family: FreeSerif;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 7.6rem;
+          line-height: 120%;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      background: linear-gradient(66.22deg, #01215c9c 9.11%, rgba(1, 33, 92, 0) 39.58%),
+        url(/img/bespoke/hero_bg-mobile.jpg);
+      background-size: cover;
+      margin-top: 11rem;
+      .r-container {
+        padding-top: 11rem;
+        padding-bottom: 3rem;
+        .title {
+          width: 80%;
+          font-size: 5.8rem;
+          line-height: 1;
+          span {
+            font-size: 5.8rem;
+            line-height: 98%;
+          }
+        }
+      }
+    }
+    @media (max-width: 575px) {
+      .r-container {
+        .title {
+          width: 50%;
+          font-size: 4.2rem;
+          span {
+            font-size: 4.2rem;
+          }
+        }
+      }
+    }
+  }
+  .guide-section {
+    background: #f7f3ec;
+    .title {
+      font-size: 4.8rem;
+      font-weight: 400;
+      color: #01215c;
+    }
+    .guide-text {
+      font-size: 24px;
+      line-height: 150%;
+      font-weight: 400;
+      color: rgba(2, 24, 37, 0.8);
+    }
+    @media (max-width: 575px) {
+      .title {
+        font-size: 3.6rem;
+      }
+      .guide-text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .journey-section {
+    .title {
+      font-size: 7.2rem;
+      font-weight: 400;
+      color: #01215c;
+      & > span {
+        font-family: FreeSerif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 7.6rem;
+        line-height: 120%;
+      }
+    }
+    .time-line {
+      margin-top: 120px;
+      .MuiTimelineSeparator-root {
+        margin-left: 50px;
+        margin-right: 50px;
+        .MuiTimelineConnector-root {
+          width: 5px;
+          background: rgba(1, 33, 92, 0.1);
+        }
+        .MuiTimelineDot-defaultGrey {
+          border: 5px solid #acbad6;
+          width: 30px;
+          height: 30px;
+          background: white;
+          box-shadow: none;
+          margin: 0;
+          transition-duration: 0.8s;
+        }
+      }
+      .MuiTimelineItem-root {
+        &.active {
+          .MuiTimelineDot-defaultGrey {
+            background: #01215c;
+            border: 0;
+            transition-duration: 0.7s;
+          }
+        }
+      }
+      .text-panel {
+        margin-top: -70px;
+        .item-title {
+          font-size: 4.8rem;
+          font-weight: 400;
+          color: #01215c;
+        }
+        .item-step {
+          color: rgba(2, 24, 37, 0.5);
+          font-size: 1.6rem;
+          font-weight: 500;
+        }
+        .item-description {
+          font-size: 1.8rem;
+          color: rgba(2, 24, 37, 0.5);
+        }
+      }
+      .item-image {
+        margin-top: -70px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 140px;
+      }
+    }
+    .time-line-mobile {
+      .MuiTimelineItem-root {
+        &::before {
+          display: none;
+        }
+        .item-image {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        .text-panel {
+          margin-top: 0;
+        }
+        .MuiTimelineSeparator-root {
+          margin-left: 0;
+        }
+      }
+    }
+    .btn-panel {
+      button {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+    }
+    @media (max-width: 575px) {
+      .title {
+        font-size: 4.8rem;
+        span {
+          font-size: 4.8rem;
+        }
+      }
+      .btn-panel {
+        button {
+          width: 100%;
+        }
+      }
+      .time-line-mobile {
+        margin-top: 0;
+        .MuiTimelineSeparator-root {
+          margin-right: 2rem;
+        }
+        .MuiTimelineContent-root {
+          padding: 0;
+        }
+      }
+    }
+  }
+  .signature-section {
+    .title-panel {
+      position: relative;
+      background: #f7f3ec;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        background: #f7f3ec;
+      }
+      h3 {
+        font-size: 4.8rem;
+        font-weight: 400;
+        color: #01215c;
+      }
+      p {
+        color: rgba(2, 24, 37, 0.8);
+        font-size: 2.4rem;
+        font-weight: 350;
+      }
+    }
+    .slider-panel {
+      .image-panel {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .title-panel {
+        h3 {
+          font-size: 3.6rem;
+        }
+        p {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}

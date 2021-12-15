@@ -1,0 +1,257 @@
+.why-royal-coster_page {
+  .hero-section {
+    background: linear-gradient(75.87deg, #01215c 12.8%, rgba(1, 33, 92, 0) 66.93%),
+      url(/img/whyRoyalCoster/banner_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    .r-container {
+      padding-top: 20rem;
+      padding-bottom: 5rem;
+      @media (max-width: 991px) {
+        padding-top: 15rem;
+      }
+      p {
+        font-size: 2.4rem;
+        color: white;
+      }
+      .title {
+        font-size: 7.2rem;
+        font-weight: 400;
+        line-height: 102%;
+        color: white;
+        & > span {
+          font-family: FreeSerif;
+          font-weight: 400;
+          font-size: 7.6rem;
+          font-style: italic;
+        }
+      }
+      .description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    @media (max-width: 767px) {
+      .r-container {
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        .title {
+          width: 80%;
+          font-size: 5.8rem;
+          line-height: 1;
+          span {
+            font-size: 5.8rem;
+            line-height: 98%;
+          }
+        }
+      }
+    }
+    @media (max-width: 575px) {
+      .r-container {
+        p {
+          font-size: 1.8rem;
+        }
+        .title {
+          width: 100%;
+          font-size: 3.4rem;
+          span {
+            font-size: 3.4rem;
+          }
+        }
+      }
+    }
+  }
+  .guide-section {
+    background: #f7f3ec;
+    .title {
+      font-size: 4.8rem;
+      font-weight: 400;
+      color: #01215c;
+    }
+    .guide-text {
+      font-size: 24px;
+      line-height: 150%;
+      font-weight: 400;
+      color: rgba(2, 24, 37, 0.8);
+    }
+    @media (max-width: 575px) {
+      .title {
+        width: 100%;
+        font-size: 3.6rem;
+      }
+      .guide-text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .our-value-section {
+    position: relative;
+    .title {
+      position: relative;
+      z-index: 3;
+      font-weight: normal;
+      font-size: 7.2rem;
+      line-height: 110%;
+      span {
+        font-family: FreeSerif;
+          font-style: italic;
+          font-size: 7.4rem;
+      }
+    }
+    .idea-panel {
+      position: relative;
+      z-index: 3;
+      background: white;
+      margin-bottom: 60px;
+      box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.06);
+      .mark-image {
+        width: 40px;
+        height: 40px;
+      }
+      .text-panel {
+        * {
+          font-family: FreeSerif;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 150%;
+        }
+        span {
+          color: #bd9a5b;
+        }
+        @media (max-width: 575px) {
+          width: 40%;
+          margin: auto;
+        }
+      }
+    }
+    .top-pink-box {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: rgba(229, 215, 191, 0.4);
+      filter: blur(500px);
+      width: 20vw;
+      height: 20vw;
+    }
+    .bottom-pink-box {
+      position: absolute;
+      bottom: 0px;
+      left: 5%;
+      width: 150px;
+      height: 80%;
+      background: #fad3da;
+      opacity: 0.7;
+      filter: blur(200px);
+      transform: rotate(-45deg);
+    }
+    .bottom-blue-box {
+      position: absolute;
+      bottom: 0px;
+      left: 10%;
+      width: 150px;
+      height: 80%;
+      background: #13439b;
+      opacity: 0.7;
+      filter: blur(200px);
+      transform: rotate(-45deg);
+    }
+  }
+  .passpost-section {
+    background: #01215c;
+    font-size: 2.4rem;
+    font-weight: 400;
+    .title {
+      width: 30%;
+      font-size: 2.4rem;
+      font-weight: 400;
+      line-height: 150%;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+  .middle-answer-panel {
+    position: relative;
+    background: rgba(250, 211, 218, 0.5);
+    margin-bottom: -60px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: white;
+      width: 100%;
+      height: 30%;
+      z-index: 1;
+      @media (max-width: 767px) {
+        height: 40%;
+      }
+    }
+  }
+  .foundation-section {
+    background: #f7f3ec;
+    margin-bottom: 70px;
+    @media (max-width: 767px) {
+      margin-bottom: 150px;
+    }
+    @media (max-width: 565px) {
+      margin-bottom: 200px;
+    }
+    .r-container {
+      position: relative;
+      .text-panel {
+        h3 {
+          font-weight: 400;
+          font-size: 48px;
+          line-height: 110%;
+          span {
+            font-family: FreeSerif;
+          font-style: italic;
+          font-size: 50px;
+          }
+        }
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+          color: rgba(2, 24, 37, 0.7);
+        }
+        @media (max-width: 767px) {
+          padding-bottom: 13vw;
+        }
+        @media (max-width: 600px) {
+          padding-bottom: 20vw;
+        }
+        @media (max-width: 400px) {
+          padding-bottom: 25vw;
+        }
+      }
+      .book-panel {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 70%;
+        height: 120%;
+        background: white;
+        box-shadow: 0px 14px 50px rgba(2, 24, 37, 0.1);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        @media (max-width: 991px) {
+          width: 55%;
+        }
+        @media (max-width: 767px) {
+          bottom: 0px;
+          top: auto;
+          transform: translateY(50%);
+          width: 100%;
+          height: 100%;
+          max-height: 250px;
+        }
+      }
+    }
+  }
+}
